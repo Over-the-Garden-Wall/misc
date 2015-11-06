@@ -1,0 +1,733 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Abstract
+\end_layout
+
+\begin_layout Standard
+add
+\end_layout
+
+\begin_layout Section
+Table of contents
+\end_layout
+
+\begin_layout Standard
+adf
+\end_layout
+
+\begin_layout Section
+Literature Survey
+\end_layout
+
+\begin_layout Standard
+Among the earliest work in the study of the behavior of cells in the vertibrate
+ retina was that of Hartline in his 1938 account.
+ Here it was discovered that there exists at least three types of retinal
+ ganglion cells (GCs) that respond to different stimulus features.
+ He identified ON cells that would respond to the onset of a light stimulus,
+ OFF cells that would respond to the termination of light stimulation, and
+ ON-OFF cells that respond to both the onset and termination of light.
+ These observations were followed in the 1950s and early 1960s by several
+ researchers, who demonstrated that there were units responding to more
+ complicated features, such as convexity, dimming, and color specificity
+ [Lettvin1959, Wiesel1960, Wagner&MacNichol1961].
+\end_layout
+
+\begin_layout Standard
+[Barlow&Levick1964] were the first to discover directionally selective (DS)
+ GCs.
+ They observed a class of GC that responds to both ON and OFF stimuli that
+ moves in a specific direction.
+ They believed that DS arose in these cells through lateral inhibition displaced
+ toward the preferred direction.
+ If inhibition passes through a temporal delay line, or the inhibitory signal
+ is sustained for a longer duration than the excitatory signal, this displacemen
+t could yield DS responses.
+ [Wyatt&Daw1975] further investigated this theory and identified a cardioid-shap
+ed inhibitory receptive field around each point of excitation on the DSGC,
+ biased in the preferred direction.
+ 
+\end_layout
+
+\begin_layout Standard
+Another model exists that has appeared in models of biological motion detection
+ since the 1950s, but has not previously been ascribed to a specific neural
+ circuit in the mammalian visual system.
+ Motion can be detected by correlating excitatory input signals from two
+ locations, if one signal passes through a temporal delay line.
+ Stimulation of the delayed input followed by the nondelayed input causes
+ signals to arrive synchronously at the output element, and to activate
+ it.
+ Stimulation in the opposite order gives rise to asynchronous signals at
+ the output element, and no activation.
+ In honor of the pioneering researcher Werner Reichardt, we will refer to
+ the computational motif of Figure 1a as a 
+\begin_inset Quotes eld
+\end_inset
+
+Reichardt detector,
+\begin_inset Quotes erd
+\end_inset
+
+ although it is actually a subunit of his model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "reichardt1961autocorrelation"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In the 1980s, the starburst amacrine cell (SAC), a neuronal cell type in
+ the mammalian retina, was discovered and characterized 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Famiglietti:1983kx"
+
+\end_inset
+
+.
+ SAC dendrites receive excitatory input synapses from bipolar cells (BCs),
+ which in turn receive input from photoreceptors.
+ SAC dendrites also make synapses onto ganglion cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Famiglietti:1991fk"
+
+\end_inset
+
+, which send signals from the retina to the brain through the optic nerve.
+ Like most other amacrine cells, SACs lack an axon; their output synapses
+ are found in the distal zones of their dendrites (Figure 1b).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "borg1992model"
+
+\end_inset
+
+ observed that SAC dendrites could function as temporal delay lines, as
+ time is required for current from input synapses to propagate to output
+ synapses (Figure 1c).
+ They modeled SAC dendrites as passive electrical cables, and showed that
+ temporal delays could lead to direction selectivity, as had been observed
+ more generally by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rall1964theoretical"
+
+\end_inset
+
+.
+ Their passive cable model can be approximated by a Reichardt detector,
+ if BC input synapses onto an SAC dendrite are lumped into two groups: (1)
+ proximal synapses near the soma, and (2) distal synapses near the dendritic
+ tips and the output synapses (Figure 1c).
+ Since proximal synapses are the delayed input and distal synapses the nondelaye
+d input, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "borg1992model"
+
+\end_inset
+
+ predicted that outward motion should activate SAC dendrites more than inward
+ motion.
+\end_layout
+
+\begin_layout Standard
+Remarkably, their prediction of SAC direction selectivity was confirmed
+ ten years later 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+, as well as their prediction of an outward 
+\begin_inset Quotes eld
+\end_inset
+
+preferred direction
+\begin_inset Quotes erd
+\end_inset
+
+ (PD).
+ More recently, it was shown that BC inputs do not exhibit direction selectivity
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yonehara:2013hc"
+
+\end_inset
+
+, confirming their assumption that motion detection occurs somewhere between
+ BCs and SACs.
+\end_layout
+
+\begin_layout Standard
+However, an inconsistency with empirical data also emerged.
+ According to the model, the soma should depolarize more for inward motion
+ than for outward motion, i.e., have a PD opposite that of the distal dendrites.
+ In fact, the PDs of the soma and distal zone turn out to be the same 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ To resolve this inconsistency, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hausselt:2007nx"
+
+\end_inset
+
+ argued that active conductances must be added to the passive cable model
+ of the SAC dendrite.
+ 
+\end_layout
+
+\begin_layout Standard
+The passive cable model of SAC direction selectivity is based on the assumption
+ that the temporal delay in the Reichardt detector is due to propagation
+ of signals within the SAC dendrites.
+ This paper explores another possibility: perhaps temporal delay could arise
+ from mechanisms 
+\emph on
+presynaptic
+\emph default
+ to SAC dendrites (Figure 1d).
+ Mouse BCs have been classified into multiple types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+, which are known to have distinct temporal behaviors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ If the connectivity of BC types with SACs varied with distance from the
+ SAC soma, the BC-SAC circuit could end up resembling Figure 1d.
+ We tested this hypothesis by reconstructing BC-SAC circuitry using e2198,
+ a dataset of mouse retinal images from serial block-face scanning electron
+ microscopy (SBEM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Briggman:2011zr"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Inhibitory connections between SACs are also known to exist 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lee:2006qa"
+
+\end_inset
+
+, and can contribute to SAC direction selectivity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhou:2008kx"
+
+\end_inset
+
+.
+ However, SAC-SAC inhibition does not appear necessary for direction selectivity
+, which persists even during pharmacological blockade of inhibitory synaptic
+ transmission 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hausselt:2007nx"
+
+\end_inset
+
+.
+ Therefore the present work focuses on BC-SAC circuitry.
+ 
+\end_layout
+
+\begin_layout Section
+Specific Aims
+\end_layout
+
+\begin_layout Subsection
+Anatomically Identify BC types in the retina
+\end_layout
+
+\begin_layout Standard
+Bipolar cells
+\end_layout
+
+\begin_layout Subsection
+Identify the Mechanism of Direction Selectivity in the Off-SAC
+\end_layout
+
+\begin_layout Standard
+Compared to cognitive functions such as language, the visual detection of
+ motion may seem trivial, yet the underlying neural mechanisms have remained
+ elusive for half a century 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Borst:2011vn,Vaney:2012cr"
+
+\end_inset
+
+.
+ Some retinal outputs (ganglion cells) respond selectively to visual stimuli
+ moving in particular directions, while retinal inputs (photoreceptors)
+ lack direction selectivity (DS).
+ How does DS emerge from the microcircuitry connecting inputs to outputs?
+\end_layout
+
+\begin_layout Standard
+Research on this question has converged upon the starburst amacrine cell
+ (SAC, Figs.
+ 1a, b).
+ A SAC dendrite is more activated by motion outward from the cell body to
+ the tip of the dendrite, than by motion in the opposite direction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ Therefore a SAC dendrite exhibits DS, and outward motion is said to be
+ its 
+\begin_inset Quotes eld
+\end_inset
+
+preferred direction.
+\begin_inset Quotes erd
+\end_inset
+
+ Note that it is incorrect to assign a single such direction to a SAC, because
+ each of the cell's dendrites has its own preferred direction (Fig.
+ 1a).
+ DS persists after blocking inhibitory synaptic transmission 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hausselt:2007nx"
+
+\end_inset
+
+, when the only remaining inputs to SACs are bipolar cells (BCs), which
+ are excitatory.
+ Since the SAC exhibits DS, while its BC inputs do not 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yonehara:2013hc"
+
+\end_inset
+
+, we say that DS 
+\emph on
+emerges
+\emph default
+ from the BC-SAC circuit.
+ 
+\end_layout
+
+\begin_layout Standard
+Mouse BCs have been classified into multiple types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+, with different time lags in visual response 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ Motion is a spatiotemporal phenomenon: an object at one location appears
+ somewhere else after a time delay.
+ Therefore we wondered whether DS might arise because different locations
+ on the SAC dendrite are wired to BC types with different time lags.
+ More specifically, we hypothesized that the proximal BCs (wired near the
+ SAC soma) lag the distal BCs (wired far from the soma).
+ 
+\end_layout
+
+\begin_layout Standard
+Such 
+\begin_inset Quotes eld
+\end_inset
+
+space-time wiring specificity
+\begin_inset Quotes erd
+\end_inset
+
+ could lead to DS as follows (Fig.
+ 1c).
+ Motion outward from the soma will activate the proximal BCs followed by
+ the distal BCs.
+ If the stimulus speed is appropriate for the time lag, signals from both
+ BC groups will reach the SAC dendrite simultaneously, summing to produce
+ a large depolarization.
+ For motion inward towards the soma, BC signals will reach the SAC dendrite
+ asynchronously, causing only small depolarizations.
+ Therefore the dendrite will 
+\begin_inset Quotes eld
+\end_inset
+
+prefer
+\begin_inset Quotes erd
+\end_inset
+
+ outward motion, as observed experimentally 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Demonstrate SAC parallelism between on and off sublayers
+\end_layout
+
+\begin_layout Standard
+The starburst amacrine cell (SAC) is a key player in retinal computation
+ of the direction of a moving stimulus.
+ Ablation of SACs impairs the optokinetic reflex, a behavior that depends
+ on computation of visual motion 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yoshida:2001rz,amthor2002effects"
+
+\end_inset
+
+.
+ Both ablation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yoshida:2001rz,amthor2002effects"
+
+\end_inset
+
+ and reversible inactivation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vlasits:2014aa"
+
+\end_inset
+
+ of SACs reduce direction selective (DS) responses in ganglion cells, which
+ receive synaptic input from SACs.
+ SAC dendrites are preferentially activated by visual stimuli that move
+ outward from the soma to the dendritic tips 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq,Lee:2006qa,Hausselt:2007nx"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The proposed mechanisms for DS of SAC dendrites fall into several categories.
+ According to inhibitory cellular hypotheses, dendritic biophysics causes
+ inhibitory input to SACs to have effects that depend on dendritic location
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "borg1992model,Gavrikov:2003om"
+
+\end_inset
+
+.
+ In inhibitory circuit hypotheses, GABAergic synaptic connectivity between
+ SAC dendrites depends on the difference between their preferred directions
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lee:2006qa,Munch:2006qy"
+
+\end_inset
+
+.
+ In excitatory cellular hypotheses, SAC biophysics causes excitatory input
+ to SACs to have effects that depend on dendritic location 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tukker2004direction,Hausselt:2007nx,Oesch:2010aa"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Recently we proposed a novel excitatory circuit hypothesis based on specificity
+ of wiring between bipolar cells (BCs) and SACs.
+ The proposal was based on anatomical evidence that sustained and transient
+ BC types are connected to SACs at locations that are near and far from
+ the SAC soma, respectively 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2014sf"
+
+\end_inset
+
+.
+ Such 
+\begin_inset Quotes eld
+\end_inset
+
+space-time wiring specificity
+\begin_inset Quotes erd
+\end_inset
+
+ could make the BC-SAC circuit function as a correlation-type motion detector
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Borst:2011vn"
+
+\end_inset
+
+, and is consistent with the observed outward preferred direction of SAC
+ dendrites.
+\end_layout
+
+\begin_layout Standard
+Like many other retinal neurons, the SAC comes in both On and Off types.
+ The On SAC resembles a reflection of the Off SAC across a plane through
+ the middle of the IPL (Fig.
+ 1B, D).
+ Probably due to this striking symmetry, DS and its mechanisms are often
+ assumed to be similar between On and Off SACs.
+ This remains merely an assumption as published studies of SACs were typically
+ restricted to a single type.
+ Physiological studies of DS were carried out for On SACs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq,Lee:2006qa,Hausselt:2007nx"
+
+\end_inset
+
+, while our anatomical study of BC-SAC wiring specificity was carried out
+ for Off SACs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2014sf"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Here we find evidence that the On BC-SAC circuit possesses a space-time
+ wiring specificity analogous to that shown previously for the Off BC-SAC
+ circuit.
+ We reconstructed a large set of On BCs and On SACs from e2198, a dataset
+ of mouse retinal images from serial block-face scanning electron microscopy
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Briggman:2011zr"
+
+\end_inset
+
+.
+ Based on the resulting high-resolution information about the anatomy of
+ single cells, we have succeeded in subdividing BC5 into three types that
+ we call BC5t, BC5i, and BC5o.
+ This finding confirms a speculation of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Helmstaedter:2013zr"
+
+\end_inset
+
+, who were previously able to distinguish just two BC5 types, but predicted
+ the existence of more.
+ Our definition of a third BC5 type increases the total count of cone BC
+ types to 12.
+ 
+\end_layout
+
+\begin_layout Standard
+Contact analysis is consistent with a wiring diagram in which BC7 prefers
+ to synapse closer to the On SAC soma, and BC5 prefers to synapse farther
+ from the soma (Fig.
+ 1C).
+ Among the BC5 types, synaptic input from BC5o is likely to be less than
+ from BC5t and BC5i.
+ 
+\end_layout
+
+\begin_layout Standard
+Most of the available evidence suggests that transient BC types generally
+ arborize near the IPL center, and sustained BC types near the IPL edges
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ (But see 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Ichinose:2014aa"
+
+\end_inset
+
+ for a divergent view.) Combined with the standard division of the IPL into
+ On and Off sublamina, this yields four sublayers: On-sustained, On-transient,
+ Off-transient, and Off-sustained (Fig.
+ 1B).
+ Based on this IPL organization, it is likely that BC7 is sustained and
+ BC5 is transient.
+ If this is the case, then On BC-SAC wiring is analogous to Off BC-SAC wiring.
+ 
+\end_layout
+
+\begin_layout Subsection
+Investigate DS in the on-off DSGC
+\end_layout
+
+\begin_layout Subsection
+Find other GCs with similar wiring
+\end_layout
+
+\begin_layout Subsection
+Construct a complete model of BC to GC DS
+\end_layout
+
+\begin_layout Section
+preliminary findings
+\end_layout
+
+\begin_layout Subsection
+BCs can be accurately classified by anatomy
+\end_layout
+
+\begin_layout Subsection
+A new type of BC
+\end_layout
+
+\begin_layout Subsection
+Space-Time Wiring Specificity in the off SAC
+\end_layout
+
+\begin_layout Subsection
+On SAC
+\end_layout
+
+\begin_layout Section
+Experimental Design and Setup
+\end_layout
+
+\begin_layout Standard
+adf
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\end_body
+\end_document
