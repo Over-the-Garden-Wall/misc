@@ -1,0 +1,1603 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\tolerance=10000
+\usepackage{abstract}
+%\usepackage[font=small]{caption}
+\usepackage[compact]{titlesec}
+\usepackage[super,sort&compress,comma]{natbib}
+
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name={Supplementary Figure}]{suppfigure}
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 0.5in
+\rightmargin 0.5in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Space-time wiring specificity supports direction selectivity in the retina
+\end_layout
+
+\begin_layout Author
+Jinseop S.
+ Kim
+\begin_inset Formula $^{1*}$
+\end_inset
+
+, Matthew J.
+ Greene
+\begin_inset Formula $^{1*}$
+\end_inset
+
+, Aleksandar Zlateski
+\begin_inset Formula $^{2}$
+\end_inset
+
+, Kisuk Lee
+\begin_inset Formula $^{1}$
+\end_inset
+
+, 
+\begin_inset Newline newline
+\end_inset
+
+Mark Richardson
+\begin_inset Formula $^{1}\dag$
+\end_inset
+
+, Srinivas C.
+ Turaga
+\begin_inset Formula $^{1}\dag$
+\end_inset
+
+, Michael Purcaro
+\begin_inset Formula $^{1}$
+\end_inset
+
+, Matthew Balkam
+\begin_inset Formula $^{1}$
+\end_inset
+
+, Amy Robinson
+\begin_inset Formula $^{1}$
+\end_inset
+
+, 
+\begin_inset Newline newline
+\end_inset
+
+Bardia F.
+ Behabadi
+\begin_inset Formula $^{3}$
+\end_inset
+
+, Michael Campos
+\begin_inset Formula $^{3}$
+\end_inset
+
+, Winfried Denk
+\begin_inset Formula $^{4}$
+\end_inset
+
+, H.
+ Sebastian Seung
+\begin_inset Formula $^{1\dag}$
+\end_inset
+
+, and the EyeWirers
+\begin_inset Formula $^{5}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{1}$
+\end_inset
+
+Brain & Cognitive Sciences Department and
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Electrical Engineering and Computer Science Department,
+\begin_inset Newline newline
+\end_inset
+
+ Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{3}$
+\end_inset
+
+Qualcomm Research, 5775 Morehouse Dr., San Diego, CA 92121, USA
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{4}$
+\end_inset
+
+Max-Planck Institute for Medical Research, D-69120 Heidelberg, Germany
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{5}$
+\end_inset
+
+
+\family typewriter
+http://eyewire.org
+\family default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dag$
+\end_inset
+
+Present addresses: Princeton Neuroscience Institute
+\begin_inset Newline newline
+\end_inset
+
+and Computer Science Dept., Princeton, NJ 08544 USA (H.S.S.);
+\begin_inset Newline newline
+\end_inset
+
+Gatsby Computational Neuroscience Unit, London WC1N 3AR, UK (S.C.T.); 
+\begin_inset Newline newline
+\end_inset
+
+601 N 42nd St, Seattle, WA 98103 USA (M.R.).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{*}$
+\end_inset
+
+These authors contributed equally.
+\end_layout
+
+\begin_layout Abstract
+How does the mammalian retina detect motion? This classic problem in visual
+ neuroscience has remained unsolved for 50 years.
+ In search of clues, we reconstructed Off-type starburst amacrine cells
+ (SACs) and bipolar cells (BCs) in serial electron microscopic images with
+ help from EyeWire, an online community of 
+\begin_inset Quotes eld
+\end_inset
+
+citizen neuroscientists.
+\begin_inset Quotes erd
+\end_inset
+
+ Based on quantitative analyses of contact area and branch depth in the
+ retina, we found evidence that one BC type prefers to wire with a SAC dendrite
+ near the SAC soma, while another BC type prefers to wire far from the soma.
+ The near type is known to lag the far type in time of visual response.
+ A mathematical model shows how such 
+\begin_inset Quotes eld
+\end_inset
+
+space-time wiring specificity
+\begin_inset Quotes erd
+\end_inset
+
+ could endow SAC dendrites with receptive fields that are oriented in space-time
+ and therefore respond selectively to stimuli that move in the outward direction
+ from the soma.
+\end_layout
+
+\begin_layout Standard
+Compared to cognitive functions such as language, the visual detection of
+ motion may seem trivial, yet the underlying neural mechanisms have remained
+ elusive for half a century 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Borst:2011vn,Vaney:2012cr"
+
+\end_inset
+
+.
+ Some retinal outputs (ganglion cells) respond selectively to visual stimuli
+ moving in particular directions, while retinal inputs (photoreceptors)
+ lack direction selectivity (DS).
+ How does DS emerge from the microcircuitry connecting inputs to outputs?
+\end_layout
+
+\begin_layout Standard
+Research on this question has converged upon the starburst amacrine cell
+ (SAC, Figs.
+ 1a, b).
+ A SAC dendrite is more activated by motion outward from the cell body to
+ the tip of the dendrite, than by motion in the opposite direction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ Therefore a SAC dendrite exhibits DS, and outward motion is said to be
+ its 
+\begin_inset Quotes eld
+\end_inset
+
+preferred direction.
+\begin_inset Quotes erd
+\end_inset
+
+ Note that it is incorrect to assign a single such direction to a SAC, because
+ each of the cell's dendrites has its own preferred direction (Fig.
+ 1a).
+ DS persists after blocking inhibitory synaptic transmission 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hausselt:2007nx"
+
+\end_inset
+
+, when the only remaining inputs to SACs are bipolar cells (BCs), which
+ are excitatory.
+ Since the SAC exhibits DS, while its BC inputs do not 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yonehara:2013hc"
+
+\end_inset
+
+, we say that DS 
+\emph on
+emerges
+\emph default
+ from the BC-SAC circuit.
+ 
+\end_layout
+
+\begin_layout Standard
+Mouse BCs have been classified into multiple types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+, with different time lags in visual response 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ Motion is a spatiotemporal phenomenon: an object at one location appears
+ somewhere else after a time delay.
+ Therefore we wondered whether DS might arise because different locations
+ on the SAC dendrite are wired to BC types with different time lags.
+ More specifically, we hypothesized that the proximal BCs (wired near the
+ SAC soma) lag the distal BCs (wired far from the soma).
+ 
+\end_layout
+
+\begin_layout Standard
+Such 
+\begin_inset Quotes eld
+\end_inset
+
+space-time wiring specificity
+\begin_inset Quotes erd
+\end_inset
+
+ could lead to DS as follows (Fig.
+ 1c).
+ Motion outward from the soma will activate the proximal BCs followed by
+ the distal BCs.
+ If the stimulus speed is appropriate for the time lag, signals from both
+ BC groups will reach the SAC dendrite simultaneously, summing to produce
+ a large depolarization.
+ For motion inward towards the soma, BC signals will reach the SAC dendrite
+ asynchronously, causing only small depolarizations.
+ Therefore the dendrite will 
+\begin_inset Quotes eld
+\end_inset
+
+prefer
+\begin_inset Quotes erd
+\end_inset
+
+ outward motion, as observed experimentally 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+3D reconstruction by crowd and machine
+\end_layout
+
+\begin_layout Standard
+We tested our hypothesis by reconstructing Off BC-SAC circuitry using e2198,
+ an existing dataset of mouse retinal images from serial block-face scanning
+ electron microscopy (SBEM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Briggman:2011zr"
+
+\end_inset
+
+.
+ The e2198 dataset was oversegmented by an artificial intelligence (AI)
+ into groups of neighboring voxels that were subsets of individual neurons.
+ These 
+\begin_inset Quotes eld
+\end_inset
+
+supervoxels
+\begin_inset Quotes erd
+\end_inset
+
+ were assembled by humans into accurate 3D reconstructions of neurons.
+ For this activity, we hired and trained a small number of workers in the
+ lab, and also transformed work into play by mobilizing volunteers through
+ EyeWire, a web site that turns 3D reconstruction of neurons into a game
+ of coloring serial EM images.
+ 
+\end_layout
+
+\begin_layout Standard
+Through EyeWire, we wanted to enable anyone, anywhere, to participate in
+ our research.
+ The approach is potentially scalable to extremely large numbers of 
+\begin_inset Quotes eld
+\end_inset
+
+citizen scientists
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lintott2008galaxy"
+
+\end_inset
+
+.
+ More importantly, the 3D reconstruction of neurons requires highly developed
+ visuospatial abilities, and we wondered whether a game could be more effective
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cooper:2010hc"
+
+\end_inset
+
+ than traditional methods of recruiting and creating experts.
+\end_layout
+
+\begin_layout Standard
+In gameplay mode, EyeWire shows a 2D slice through a 
+\begin_inset Quotes eld
+\end_inset
+
+cube,
+\begin_inset Quotes erd
+\end_inset
+
+ an e2198 subvolume of 
+\begin_inset Formula $256^{3}$
+\end_inset
+
+ grayscale voxels (Fig.
+ 2a).
+ Gameplay consists of two activities: coloring the image near some location,
+ or searching for a new location to color.
+ Coloring is done by clicking at any location in the 2D slice, which causes
+ the supervoxel containing that location to turn blue.
+ Searching is done by translating and orienting the slice within the cube,
+ and interacting with a 3D rendering of the colored supervoxels.
+\end_layout
+
+\begin_layout Standard
+When the player first receives a cube, it already comes with a 
+\begin_inset Quotes eld
+\end_inset
+
+seed,
+\begin_inset Quotes erd
+\end_inset
+
+ a contiguous set of colored supervoxels.
+ The challenge is to color all the rest of the supervoxels that belong to
+ the same neuron, and avoid coloring other neurons.
+ Gameplay for a cube terminates when the player clicks 
+\begin_inset Quotes eld
+\end_inset
+
+Submit,
+\begin_inset Quotes erd
+\end_inset
+
+ receives a numerical score (Extended Data Fig.
+ 1a), and proceeds to the next cube.
+ Because our AI is sufficiently accurate, coloring supervoxels is faster
+ than manually coloring voxels, an older approach to 3D reconstruction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fiala:2005fk"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The scoring system is designed to reward accurate coloring.
+ This is nontrivial because EyeWire does not know the correct coloring.
+ Each cube is assigned to multiple players (typically 5 to 10), and high
+ scores are earned by players who color supervoxels that other players also
+ color.
+ In other words, the scoring system rewards agreement between players, which
+ tends to be the same as rewarding accuracy.
+ 
+\end_layout
+
+\begin_layout Standard
+Consensus is used not only to incentivize individual players, but also to
+ enhance the accuracy of the entire system.
+ Any player's coloring is equivalent to a set of supervoxels.
+ Given the colorings of multiple players starting from the same seed in
+ the same cube, a consensus can be computed by voting on each supervoxel.
+ EyeWirer consensus was much more accurate than any individual EyeWirer
+ (Fig.
+ 2b,c).
+\end_layout
+
+\begin_layout Standard
+Coloring a neuron is more challenging than it sounds.
+ Images are corrupted by noise and other artifacts.
+ Neurites take paths that are difficult to predict, and can branch without
+ warning.
+ Careless errors result from lapses in attention.
+ Extensive practice is required to achieve accuracy.
+ The most accurate EyeWirers (Fig.
+ 2c, upper right corner) often had experience with thousands of cubes.
+ Improvements in accuracy were observed over the course of hundreds of cubes,
+ corresponding to tens of hours of practice (Fig.
+ 2d).
+ According to subjective reports of EyeWirers, learning continues for much
+ longer than that.
+ In contrast, previous successes at 
+\begin_inset Quotes eld
+\end_inset
+
+crowdsourcing
+\begin_inset Quotes erd
+\end_inset
+
+ image analysis involved tasks that did not require such extensive training
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "von2004labeling,lintott2008galaxy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Reconstructing an entire neuron requires tracing its branches through thousands
+ of cubes.
+ This process is coordinated by an automatic spawner, which inspects each
+ consensus cube for branches that exit the cube.
+ Each exit generates a new cube and seed, which are added to a queue.
+ EyeWirers are automatically assigned to cubes by an algorithm that attempts
+ to balance the number of plays for each cube.
+ 
+\end_layout
+
+\begin_layout Standard
+Over 100,000 registered EyeWirers have been recruited by news reports, social
+ media, and the EyeWire blog.
+ Players span a broad range of ages and educational levels, come from over
+ 130 countries, and the great majority have no formal training in neuroscience
+ (Extended Data Figs.
+ 2 and 3; Supplementary Notes).
+ These statistics show that EyeWire indeed widens participation in neuroscience
+ research.
+ At the same time, the most avid players constitute an elite group with
+ disproportionate achievements.
+ For example, the top 100 players have contributed about half of all cubes
+ completed in EyeWire.
+ 
+\end_layout
+
+\begin_layout Standard
+Lab workers also reconstructed neurons independently of EyeWire, with a
+ more sophisticated version of the user interface (Methods).
+ Their reconstructions were pooled with those of EyeWirers for the analyses
+ reported below.
+ Reconstruction error was quantified (Methods), and was treated like other
+ kinds of experimental error when calculating confidence intervals from
+ our data.
+\end_layout
+
+\begin_layout Subsection*
+Contact analysis
+\end_layout
+
+\begin_layout Standard
+We reconstructed 195 Off BC axons and 79 Off SACs from e2198 (Fig.
+ 3b, Extended Data Fig.
+ 4).
+ The e2198 retina was stained in an unconventional way that did not mark
+ intracellular structures such as neurotransmitter vesicles 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Briggman:2011zr"
+
+\end_inset
+
+, and reliable morphological criteria for identification of BC presynaptic
+ terminals are unknown.
+ As an indirect measure of connectivity, contact areas were computed for
+ all BC-SAC pairs.
+ The resulting 
+\begin_inset Quotes eld
+\end_inset
+
+contact matrix
+\begin_inset Quotes erd
+\end_inset
+
+ was analyzed through two subsequent steps.
+\end_layout
+
+\begin_layout Standard
+In the first step, Off BC axons were classified into five cell types, following
+ structural criteria 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Helmstaedter:2013zr"
+
+\end_inset
+
+ established to correspond with previous molecular definitions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+ (Methods, Extended Data Fig.
+ 5).
+ BC types stratify at characteristic depths in the inner plexiform layer
+ (IPL), and vary in size (Fig.
+ 4a).
+ The BCs of each type formed a 
+\begin_inset Quotes eld
+\end_inset
+
+mosaic,
+\begin_inset Quotes erd
+\end_inset
+
+ meaning that cells were spaced roughly periodically (Extended Data Fig.
+ 6a-e).
+ This is generally accepted as an important defining property of a retinal
+ cell type.
+ Type densities (Extended Data Fig.
+ 6f) were roughly consistent with previous reports 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+.
+ When the columns of the contact matrix were sorted by BC type (Fig.
+ 4b), it became evident that BC2 and BC3a contact SACs more than other BC
+ types.
+ 
+\end_layout
+
+\begin_layout Standard
+In the second step, we averaged contact area over BC-SAC pairs of the same
+ BC type and similar distance between the BC axon and the SAC soma in the
+ plane tangential to the retina (Fig.
+ 4c).
+ These absolute areas were normalized to convert them into the percentage
+ of SAC surface area covered by BCs of a given type (Methods).
+ The resulting graphs show that BC2 prefers to contact SAC dendrites close
+ to the SAC soma, whereas BC3a prefers to contact far from the soma (Fig.
+ 4d, Extended Data Fig.
+ 7c).
+ 
+\end_layout
+
+\begin_layout Standard
+Imaging of intracellular calcium in BC axons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq"
+
+\end_inset
+
+ and extracellular glutamate around BC axons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Borghuis:2013uq"
+
+\end_inset
+
+ indicate that BC2 lags BC3a in visual responses by 50 to 100 ms.
+ Therefore BC-SAC wiring appears to possess the space-time specificity appropria
+te for an outward preferred direction, as we hypothesized (Fig.
+ 1c).
+\end_layout
+
+\begin_layout Subsection*
+Co-stratification analysis
+\end_layout
+
+\begin_layout Standard
+Off SACs stratify at a particular depth in the IPL (Fig.
+ 1b).
+ Why this depth and not some other? From Fig.
+ 4a, it is obvious that this depth is appropriate for wiring with BC2 and
+ BC3a, as required by our model of DS emergence.
+ Following this logic one step further, we wondered whether the observed
+ dependence of contact on distance from the SAC soma might be reflected
+ in fine aspects of SAC morphology.
+ We hypothesized that SAC dendrites are 
+\begin_inset Quotes eld
+\end_inset
+
+tilted,
+\begin_inset Quotes erd
+\end_inset
+
+ moving deeper into the IPL with distance from the SAC soma.
+ Such a change in depth would be compatible with more overlap with BC2 near
+ the soma, and more overlap with BC3a far from the soma, since BC3a is deeper
+ in the IPL than BC2 (Fig.
+ 4a and Supplementary Video).
+\end_layout
+
+\begin_layout Standard
+The hypothesized tilt turns out to exist (Fig.
+ 5a).
+ Very close to the SAC soma, the dendrites dive sharply into the IPL from
+ the INL.
+ Surprisingly, IPL depth continues to increase as distance from the SAC
+ soma in the tangential plane ranges from 20 to 80 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+ The slight increase is not evident in a single dendrite (Fig.
+ 1b), but emerges from statistical averaging.
+\end_layout
+
+\begin_layout Standard
+Could dendritic tilt be the cause of the observed variation in BC-SAC contact
+ with distance (Fig.
+ 4d)? We cannot address causality based on our data, but we can test how
+ well the tilt predicts contact variation.
+ We computed the stratification profiles of BC types (Fig.
+ 5a), defined as the one-dimensional density of BC surface area along the
+ depth of the IPL.
+ We also computed the stratification profile of SAC dendrites at various
+ distances from the SAC soma (quartiles, Fig.
+ 5a).
+ Assuming that BC and SAC arbors are statistically independent of each other,
+ we estimated contact from 
+\begin_inset Quotes eld
+\end_inset
+
+co-stratification,
+\begin_inset Quotes erd
+\end_inset
+
+ defined as the integral over IPL depth of the product of BC and SAC stratificat
+ion profiles (Methods).
+\end_layout
+
+\begin_layout Standard
+We found that actual BC2 contact depends more strongly on distance than
+ predicted; the slight change in IPL depth after the initial plunge appears
+ too small to account for the large change in actual BC2 contact.
+ In other failures of contact prediction, BC3a, BC3b, and BC4 stratify at
+ the same IPL depths (Fig.
+ 5a), yet BC3a makes much more contact than BC3b or BC4.
+ Also, actual BC3a contact plummets near the tips of SAC dendrites (Fig.
+ 4d), while predicted contact does not change at all because the IPL depth
+ of SAC dendrites is constant in this region (Fig.
+ 5b).
+ Overall, the total contact from all BC types seems low in this region (Extended
+ Data Fig.
+ 7d), suggesting that BCs avoid making synaptic inputs to the most distal
+ SAC dendrites.
+ This runs counter to the conventional belief that input synapses are uniformly
+ distributed over the entire length of SAC dendrites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Famiglietti:1991fk"
+
+\end_inset
+
+.
+ The unreliability of inferring contact from co-stratification is illustrated
+ by numerous examples of SAC dendrites that pass through BC axonal arbors
+ without making any contact at all (Extended Data Fig.
+ 8).
+\end_layout
+
+\begin_layout Subsection*
+Model of direction selectivity
+\end_layout
+
+\begin_layout Standard
+Above we mentioned that BC2 lags BC3a in visual response.
+ There is another important difference: BC3a responds more transiently to
+ step changes in illumination, while BC2 exhibits more sustained responses.
+ The implications of the sustained-transient distinction for DS can be understoo
+d using a mathematical model.
+ The activity of a retinal neuron is often approximated as a linear spatiotempor
+al filtering of the visual stimulus followed by a nonlinearity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berry:1998kx,Baccus:2002vn"
+
+\end_inset
+
+.
+ Such a 
+\begin_inset Quotes eld
+\end_inset
+
+linear-nonlinear
+\begin_inset Quotes erd
+\end_inset
+
+ model for the output 
+\begin_inset Formula $O(t)$
+\end_inset
+
+ of the SAC dendrite can be written as 
+\begin_inset Formula 
+\begin{equation}
+O(t)=\left[\int dxdt'\: W(x,t-t')I(x,t')\right]^{+}\label{eq:LinearNonlinear}
+\end{equation}
+
+\end_inset
+
+For simplicity, the dendrite and visual stimulus 
+\begin_inset Formula $I(x,t)$
+\end_inset
+
+ are restricted to a single spatial dimension 
+\begin_inset Formula $x$
+\end_inset
+
+, and the nonlinearity is a half-wave rectification, 
+\begin_inset Formula $\left[z\right]^{+}=\max\left\{ z,0\right\} $
+\end_inset
+
+.
+ We interpret the integral in Eq.
+\begin_inset space \space{}
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LinearNonlinear"
+
+\end_inset
+
+) as the summed input from the BCs presynaptic to the SAC.
+ The nonlinearity could arise from various biophysical mechanisms, such
+ as synaptic transmission from SACs to other neurons.
+ The spatiotemporal filter 
+\begin_inset Formula $W(x,t)$
+\end_inset
+
+ is a sum of two functions, 
+\begin_inset Formula 
+\begin{equation}
+W(x,t)=U_{s}(x)v_{s}(t)+U_{t}(x)v_{t}(t)\label{eq:SumTwoSeparableFilters}
+\end{equation}
+
+\end_inset
+
+corresponding to contributions from BC2 and BC3a.
+ The sustained temporal filter 
+\begin_inset Formula $v_{s}(t)$
+\end_inset
+
+ is monophasic, while the transient filter 
+\begin_inset Formula $v_{t}(t)$
+\end_inset
+
+ is biphasic (Fig.
+ 6a).
+ The spatial filter 
+\begin_inset Formula $U_{s}(x)$
+\end_inset
+
+ represents the entire set of all BC2 inputs to the dendrite, and can be
+ estimated from the BC2 contact area graph in Figure 4d.
+ Similarly, 
+\begin_inset Formula $U_{t}(x)$
+\end_inset
+
+ can be estimated from the BC3a contact area graph.
+ The two spatial filters are displaced relative to each other (Fig.
+ 6a), because BC3a tends to contact SAC dendrites at more distal locations
+ than BC2.
+\end_layout
+
+\begin_layout Standard
+It is well known that direction selectivity (DS) can be generated by a model
+ like Eqs.
+\begin_inset space \space{}
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LinearNonlinear"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:SumTwoSeparableFilters"
+
+\end_inset
+
+), which is based on the sum of two space-time separable filters 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Watson:1985fk,Adelson:1985bh"
+
+\end_inset
+
+.
+ This is illustrated by Fig.
+ 6 using the fact that the convolution in Eq.
+\begin_inset space \space{}
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LinearNonlinear"
+
+\end_inset
+
+) is equivalent to 
+\begin_inset Quotes eld
+\end_inset
+
+sliding
+\begin_inset Quotes erd
+\end_inset
+
+ the spatiotemporal filter 
+\begin_inset Formula $W$
+\end_inset
+
+ in time over the stimulus 
+\begin_inset Formula $I$
+\end_inset
+
+, and computing the overlap at each time.
+ The filter 
+\begin_inset Formula $W(x,t)$
+\end_inset
+
+ is oriented in space-time (Fig.
+ 6a), and so also is a moving stimulus 
+\begin_inset Formula $I(x,t)$
+\end_inset
+
+ (Fig.
+ 6g,h).
+ The overlap with a rightward-moving stimulus (Fig.
+ 6h) is greater than for a leftward one (Fig.
+ 6g), so the model is DS, and rightward is the preferred direction.
+ 
+\end_layout
+
+\begin_layout Standard
+How is DS affected by the biphasic shape of the transient temporal filter,
+ 
+\begin_inset Formula $v_{t}(t)$
+\end_inset
+
+? If we remove the negative lobe (Fig.
+ 6c), then 
+\begin_inset Formula $v_{t}(t)$
+\end_inset
+
+ will become monophasic like 
+\begin_inset Formula $v_{s}(t)$
+\end_inset
+
+ and their relation closer to a simple time lag (Fig.
+ 6d).
+ We will refer to this model as a 
+\begin_inset Quotes eld
+\end_inset
+
+Reichardt detector,
+\begin_inset Quotes erd
+\end_inset
+
+ in honor of the pioneering researcher Werner Reichardt, although it more
+ closely resembles a subunit of his model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "reichardt1961autocorrelation"
+
+\end_inset
+
+.
+ On the other hand, removing the positive lobe of 
+\begin_inset Formula $v_{t}(t)$
+\end_inset
+
+ makes it monophasic but with inverted sign relative to the sustained filter
+ (Fig.
+ 6e).
+ The result (Fig.
+ 6f) resembles a DS model originally proposed by Barlow and Levick 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barlow:1965dq"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Both modified models (Figs.
+ 6d,f) exhibit DS.
+ In the Reichardt detector, the inputs from the two arms enhance each other
+ for motion in the preferred direction.
+ In the Barlow-Levick detector, the two inputs cancel each other for motion
+ in the null direction.
+ Since our sustained-transient model (Fig.
+ 6b) employs both mechanisms, it should exhibit more DS than either detector.
+ Our model is related to versions of the Reichardt detector with low-pass
+ and high-pass filters on the two arms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Borst:2003fk"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In the original Barlow-Levick model, the negative filter corresponded to
+ synaptic inhibition.
+ Since BCs are believed to be excitatory, negative BC input in our model
+ represents a reduction of excitation relative to the resting level, rather
+ than true inhibition.
+ Signaling by reduced excitation may be possible, at least for low contrast
+ stimuli, as BC ribbon synapses may have a significant resting rate of transmitt
+er release 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lagnado:1996fk"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The model of Eqs.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LinearNonlinear"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:SumTwoSeparableFilters"
+
+\end_inset
+
+) is a useful starting point for many theoretical investigations that are
+ outside the scope of this article.
+ For example, DS dependences on the spatial and temporal frequency of a
+ sinusoidal traveling wave stimulus are calculated in the Supplementary
+ Equations, and DS dependence on stimulus speed is graphed in Extended Data
+ Figure 9.
+\end_layout
+
+\begin_layout Subsection*
+Discussion
+\end_layout
+
+\begin_layout Standard
+In our DS model, SAC dendrites are wired to BC types with different time
+ lags.
+ A previous model did not distinguish between BC types, and instead relied
+ on the time lag of signal conduction within the SAC dendrite itself 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tukker2004direction"
+
+\end_inset
+
+ (Fig.
+ 1d).
+ Like most other amacrine cells, SACs lack an axon; their output synapses
+ are found in the distal zones of their dendrites 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Famiglietti:1991fk"
+
+\end_inset
+
+ (Fig.
+ 1a, inset).
+ Due to dendritic conduction delay, proximal BC inputs should take longer
+ to reach the output synapses than distal BC inputs (Fig.
+ 1d).
+ Therefore this time lag is also consistent with the empirical finding of
+ an outward preferred direction.
+ To summarize the novelty of our hypothesis, we place the time lag before
+ BC-SAC synapses, whereas the previous model places it after BC-SAC synapses.
+\end_layout
+
+\begin_layout Standard
+The postsynaptic delay model has a major weakness.
+ If dendritic conduction were the only source of time lag, the somatic voltage
+ would exhibit DS with an inward preferred direction, but this is inconsistent
+ with intracellular recordings 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Euler:2002oq"
+
+\end_inset
+
+ (Fig.
+ 1e).
+ In contrast, the presynaptic delay model is compatible with approximating
+ an SAC dendrite as isopotential (Fig.
+ 1c), so preferred direction is predicted to be independent of the location
+ of the voltage measurement, consistent with empirical data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ It may also be possible to make the postsynaptic delay model consistent
+ with experiments by adding active dendritic conductances 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hausselt:2007nx"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The presynaptic and postsynaptic delay models are not mutually exclusive.
+ If they work together, passive cable theory suggests that presynaptic delay
+ dominates, because estimated postsynaptic delay is much shorter than the
+ time lag between BC2 and BC3a (Supplementary Equations).
+ Can we gauge the relative importance of the delays empirically rather than
+ theoretically? One way would be intracellular recording at the SAC soma
+ of responses to visual stimulation at various dendritic locations.
+ If postsynaptic delay dominates, then response latency will grow with distance
+ of the visual stimulus from the soma.
+ If presynaptic delay dominates, then distal stimulation will evoke somatic
+ responses with shorter latency than proximal stimulation.
+ This prediction may seem counterintuitive, but is an obvious outcome of
+ our model.
+\end_layout
+
+\begin_layout Standard
+Many other models of DS emergence in SACs invoke inhibition as well as excitatio
+n 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "borg1992model,Gavrikov:2003om,Munch:2006qy,Lee:2006qa"
+
+\end_inset
+
+.
+ We have focused on excitatory mechanisms, as blocking inhibition does not
+ abolish DS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ However, inhibition may have the effect of enhancing DS, and its role should
+ be investigated further.
+\end_layout
+
+\begin_layout Standard
+This work focused on Off BC-SAC circuitry.
+ An analogous sustained-transient distinction can also be made for On BC
+ types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ It remains to be seen whether their connectivity with On SACs depends on
+ distance from the soma.
+ If this turns out to be the case, then the model of Figure 6 could serve
+ as a general theory of motion detection by both On and Off SACs.
+ The model filter of Figure 6a also resembles the spatiotemporal receptive
+ field of the J type of ganglion cell (Fig.
+ 3b of Ref.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citenum{Kim:2008kl}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Neural activity imaging 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Maisak:2013ly"
+
+\end_inset
+
+ and connectomic analysis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Takemura:2013zr"
+
+\end_inset
+
+ have recently identified a plausible candidate for the site of DS emergence
+ in the fly visual system.
+ If our theory is correct, then the analogies between insect and mammalian
+ motion detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Borst:2011vn"
+
+\end_inset
+
+ are more far-reaching than previously suspected, with fly T4 and T5 cells
+ corresponding to On and Off SAC dendrites in both connectivity and function.
+ 
+\end_layout
+
+\begin_layout Standard
+A glimmer of space-time wiring specificity can even be seen in the structure
+ of the SAC itself.
+ Since BC types with different time lags arborize at different IPL depths,
+ IPL depth can be regarded as a time axis.
+ Therefore, the slight tilt of the SAC dendrites in the IPL (Fig.
+ 5a) could be related to the orientation of the SAC receptive field in space-tim
+e (Fig.
+ 6a).
+ However, dendritic tilt alone is not sufficient to predict our model, as
+ co-stratification sometimes fails to predict contact (Figs.
+ 4d, 5b).
+ For example, co-stratification predicts strong BC4 connectivity to distal
+ SAC dendrites.
+ This would favor an inward preferred direction, contrary to what is observed,
+ because BC2 leads (not lags) BC4 in visual responses 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The idea that contact (or connectivity) can be inferred from co-stratification
+ is sometimes known as Peters' Rule 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "braitenberg1998cortex"
+
+\end_inset
+
+, and has also been applied to estimate neocortical connectivity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kalisman:2003vn,Binzegger:2004kl,Stepanyants:2005kx"
+
+\end_inset
+
+.
+ The present work shows that fairly subtle violations of Peters' Rule may
+ be important for visual function.
+ Previous research suggests that On-Off direction selective ganglion cells
+ (DSGCs) inherit their DS from SAC inputs due to a strong violation of Peters'
+ Rule 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fried:2002mi,yonehara2010spatially,wei2010development,Briggman:2011zr"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Our findings were made possible by using AI to reduce the amount of human
+ effort required for 3D reconstruction of neurons.
+ Even after the labor savings, our research required great human effort
+ from a handful of paid workers in the lab and a large number of volunteers
+ through EyeWire.
+ Our experiences do not support claims that the 
+\begin_inset Quotes eld
+\end_inset
+
+wisdom of the crowd
+\begin_inset Quotes erd
+\end_inset
+
+ should replace experts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "surowiecki2005wisdom"
+
+\end_inset
+
+.
+ Instead, EyeWire depends on cooperation between lab experts and online
+ amateurs (Methods).
+ Furthermore, some amateurs developed remarkable expertise and were promoted
+ to increasingly sophisticated roles within the EyeWire community (Supplementary
+ Notes).
+ We believe that crowd wisdom requires amplifying the expert voices within
+ the crowd, and also empowering individuals to become experts.
+ Fortunately, such goals are well-matched to the game format.
+\end_layout
+
+\begin_layout Standard
+The EyeWire AI was based on a deep convolutional network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "TuragaMALIS09,Turaga:2010ij"
+
+\end_inset
+
+.
+ Similar networks have been successfully applied to serial EM images obtained
+ using conventional staining techniques that mark intracellular organelles
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ciresan2012deep"
+
+\end_inset
+
+.
+ Extending EyeWire to such images, in which synapses are clearly visible,
+ would enable a true connection analysis that goes beyond the contact and
+ co-stratification analyses employed here.
+\end_layout
+
+\begin_layout Standard
+Our work demonstrates that reconstructing a neural circuit can provide surprisin
+g insights into its function.
+ Much more will be learned as reconstruction speed grows.
+ The combination of crowd and artificial intelligence promises a continuous
+ upward path of improvement, as human input from the crowd is not only useful
+ for generating neuroscience discoveries, but also for making the AI more
+ capable through machine learning.
+\end_layout
+
+\begin_layout Subsection*
+Methods summary
+\end_layout
+
+\begin_layout Standard
+A convolutional network (CN) was trained to detect neural boundaries via
+ the MALIS procedure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TuragaMALIS09"
+
+\end_inset
+
+ and CNPKG (https://github.com/srinituraga/cnpkg/), which is based on Cortical
+ Network Simulator 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MUTCH10"
+
+\end_inset
+
+.
+ The CN was applied to the e2198 dataset, which was then segmented into
+ supervoxels by a modified version of the watershed algorithm.
+ Paid workers and volunteer EyeWirers reconstructed neurons in 3D by assembling
+ supervoxels.
+ The retina was computationally flattened, reconstructed neurons were classified
+ by their structural properties, and contact and co-stratification were
+ analyzed by custom MATLAB and C++ code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "EyeWire"
+options "naturemag"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Supplementary Information
+\end_layout
+
+\begin_layout Standard
+is linked to the online version of the paper at www.nature.com/nature.
+\end_layout
+
+\begin_layout Paragraph
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+This research was made possible by funding from the Gatsby Charitable Foundation
+, the Howard Hughes Medical Institute, the Human Frontier Science Program,
+ an anonymous donor, and the National Institutes of Health.
+ K.L was supported by a Samsung Scholarship.
+ Support from the AWS Research Grants Program gave EyeWire global reach
+ through Amazon Cloudfront.
+ We thank K.
+ Briggman for providing the e2198 dataset.
+ J.
+ Mutch created the CNS framework on which CNPKG is based.
+ D.
+ Jia, R.
+ Shearer, and B.
+ Warne assisted in early stages of software development, and W.
+ Silversmith with recent modifications.
+ R.
+ Prentki, L.
+ Trawinski, M.
+ Sorek, A.
+ Ostojic, C.
+ David, R.
+ Avery, S.
+ Temple, A.
+ Bost, M.
+ Greenstein, and M.
+ Evans worked in the lab to reconstruct neurons, and the first six also
+ served as GrimReaper and hosted EyeWire competitions.
+ Additional reconstructions were provided by R.
+ Han, M.
+ Gavrin, G.
+ Lu, A.
+ Ortiz, and D.
+ Udvary.
+ All were trained by R.
+ Prentki, who also created training videos for EyeWirers.
+ We are grateful to A.
+ Norton for 3D renderings, and to E.
+ Almeida for EyeWire graphics.
+ We acknowledge helpful discussions with T.
+ Baden, M.
+ Berry, B.
+ Borghuis, A.
+ Borst, E.
+ J.
+ Chichilnisky, D.
+ Chklovskii, D.
+ Clark, J.
+ Demb, T.
+ Euler, M.
+ Helmstaedter, A.
+ Huberman, S.
+ Lee, R.
+ Masland, J.
+ Sanes, and Z.
+ Zhou.
+\end_layout
+
+\begin_layout Paragraph
+Author contributions
+\end_layout
+
+\begin_layout Standard
+J.S.K.
+ created algorithms, software, and procedures for crowd intelligence and
+ learning, and applied them to generate neuron reconstructions.
+ J.S.K.
+ and M.J.G.
+ classified bipolar cells.
+ M.J.G.
+ analyzed contact and co-stratification, aided by code from A.Z.
+ and input from W.D.
+ H.S.S.
+ devised the model with help from B.F.B.
+ and M.C.
+ S.C.T.
+ trained the convolutional network.
+ M.P.
+ and M.B.
+ implemented software and algorithms created by A.Z.
+ for interactive segmentation and 3D visualization, with guidance from S.C.T.
+ M.R.
+ created the EyeWire game and M.B.
+ its data infrastructure.
+ K.L.
+ quantified EyeWirer accuracy and learning.
+ A.R.
+ mobilized and studied the EyeWire community.
+ EyeWirers reconstructed neurons and built extensions to EyeWire.
+ H.S.S.
+ wrote the paper with help from J.S.K., M.J.G, and A.R.
+\end_layout
+
+\begin_layout Paragraph
+Author information 
+\end_layout
+
+\begin_layout Standard
+Reprints and permissions information is available at www.nature.com/reprints.
+ W.D.
+ receives license income for SBEM technology from Gatan Inc.
+ Correspondence and requests for materials should be addressed to H.S.S.
+ (sseung@princeton.edu).
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "figuresOnlyCaptions.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "methods.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ExtendedDataOnlyCaptions.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
