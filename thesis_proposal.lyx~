@@ -457,70 +457,113 @@ Objective anatomical identification of BC types in the mouse retina
 \end_layout
 
 \begin_layout Standard
-Since BCs provide the sole source of input to the IPL, and their functional
- properties are determined by their cell type, accurate classification of
- BCs is critical to inferring the properties of downstream amacrine and
- ganglion cells.
- Prior work by [helmstaedter2014] outlined a method for the anatomical identific
-ation of BC types in the mouse retina that primarily relied on visual inspection
- of the cells' arborization in the IPM and manual categorization.
- As a fundamentally subjective method, it is of limited value to future
- researchers.
+
 \end_layout
 
 \begin_layout Standard
-We aim to provide a complete classification scheme for BC types based on
- single cell anatomy, using features available both in EM reconstructions
- and in LM methods in which the entire BC axonal arbor is stained.
- Completion of this aim will facilitate future research in the mouse retina,
- and improve replicability of retinal connectomic results.
+Prior work by [helmstaedter2014] outlined a method for the anatomical identifica
+tion of BC types in the mouse retina that primarily relied on visual inspection
+ of the cells' arborization in the IPM and manual categorization.
+ We found that many cells in our volume could not be so easily distinguished.
 \end_layout
 
 \begin_layout Subsection
-Identify a Presynaptic Mechanism of Direction Selectivity in the Off-SAC
+Identify the Mechanism of Direction Selectivity in the Off-SAC
 \end_layout
 
 \begin_layout Standard
-The proposed mechanisms for DS of SAC dendrites fall into several categories.
- According to inhibitory cellular hypotheses, dendritic biophysics causes
- inhibitory input to SACs to have effects that depend on dendritic location
- 
+Compared to cognitive functions such as language, the visual detection of
+ motion may seem trivial, yet the underlying neural mechanisms have remained
+ elusive for half a century 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "borg1992model,Gavrikov:2003om"
+LatexCommand cite
+key "Borst:2011vn,Vaney:2012cr"
 
 \end_inset
 
 .
- In inhibitory circuit hypotheses, GABAergic synaptic connectivity between
- SAC dendrites depends on the difference between their preferred directions
- 
+ Some retinal outputs (ganglion cells) respond selectively to visual stimuli
+ moving in particular directions, while retinal inputs (photoreceptors)
+ lack direction selectivity (DS).
+ How does DS emerge from the microcircuitry connecting inputs to outputs?
+\end_layout
+
+\begin_layout Standard
+Research on this question has converged upon the starburst amacrine cell
+ (SAC, Figs.
+ 1a, b).
+ A SAC dendrite is more activated by motion outward from the cell body to
+ the tip of the dendrite, than by motion in the opposite direction 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Lee:2006qa,Munch:2006qy"
+key "Euler:2002oq"
 
 \end_inset
 
 .
- In excitatory cellular hypotheses, SAC biophysics causes excitatory input
- to SACs to have effects that depend on dendritic location 
+ Therefore a SAC dendrite exhibits DS, and outward motion is said to be
+ its 
+\begin_inset Quotes eld
+\end_inset
+
+preferred direction.
+\begin_inset Quotes erd
+\end_inset
+
+ Note that it is incorrect to assign a single such direction to a SAC, because
+ each of the cell's dendrites has its own preferred direction (Fig.
+ 1a).
+ DS persists after blocking inhibitory synaptic transmission 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "tukker2004direction,Hausselt:2007nx,Oesch:2010aa"
+key "Hausselt:2007nx"
 
 \end_inset
 
-.
+, when the only remaining inputs to SACs are bipolar cells (BCs), which
+ are excitatory.
+ Since the SAC exhibits DS, while its BC inputs do not 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yonehara:2013hc"
+
+\end_inset
+
+, we say that DS 
+\emph on
+emerges
+\emph default
+ from the BC-SAC circuit.
  
 \end_layout
 
 \begin_layout Standard
-We aim to identify a possible alternative, which may cooperate with existing
- hypotheses.
- It is possible that a presynaptic mechanism of DS exists in the Off-SAC.
- If sustained and transient BC types are connected to SACs at locations
- that are near and far from the SAC soma, respectively, a DS signal could
- arise through what we call 
+Mouse BCs have been classified into multiple types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+, with different time lags in visual response 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq,Borghuis:2013uq"
+
+\end_inset
+
+.
+ Motion is a spatiotemporal phenomenon: an object at one location appears
+ somewhere else after a time delay.
+ Therefore we wondered whether DS might arise because different locations
+ on the SAC dendrite are wired to BC types with different time lags.
+ More specifically, we hypothesized that the proximal BCs (wired near the
+ SAC soma) lag the distal BCs (wired far from the soma).
+ 
+\end_layout
+
+\begin_layout Standard
+Such 
 \begin_inset Quotes eld
 \end_inset
 
@@ -528,16 +571,31 @@ space-time wiring specificity
 \begin_inset Quotes erd
 \end_inset
 
- 
+ could lead to DS as follows (Fig.
+ 1c).
+ Motion outward from the soma will activate the proximal BCs followed by
+ the distal BCs.
+ If the stimulus speed is appropriate for the time lag, signals from both
+ BC groups will reach the SAC dendrite simultaneously, summing to produce
+ a large depolarization.
+ For motion inward towards the soma, BC signals will reach the SAC dendrite
+ asynchronously, causing only small depolarizations.
+ Therefore the dendrite will 
+\begin_inset Quotes eld
+\end_inset
+
+prefer
+\begin_inset Quotes erd
+\end_inset
+
+ outward motion, as observed experimentally 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Kim:2014sf"
+key "Euler:2002oq"
 
 \end_inset
 
 .
- If correct, this could not only explain the origin of DS in the mammalian
- retina, but may also highlight a 
 \end_layout
 
 \begin_layout Subsection
@@ -577,6 +635,40 @@ key "Vlasits:2014aa"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Euler:2002oq,Lee:2006qa,Hausselt:2007nx"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The proposed mechanisms for DS of SAC dendrites fall into several categories.
+ According to inhibitory cellular hypotheses, dendritic biophysics causes
+ inhibitory input to SACs to have effects that depend on dendritic location
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "borg1992model,Gavrikov:2003om"
+
+\end_inset
+
+.
+ In inhibitory circuit hypotheses, GABAergic synaptic connectivity between
+ SAC dendrites depends on the difference between their preferred directions
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lee:2006qa,Munch:2006qy"
+
+\end_inset
+
+.
+ In excitatory cellular hypotheses, SAC biophysics causes excitatory input
+ to SACs to have effects that depend on dendritic location 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tukker2004direction,Hausselt:2007nx,Oesch:2010aa"
 
 \end_inset
 
