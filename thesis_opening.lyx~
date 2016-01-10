@@ -4,13 +4,11 @@
 \begin_header
 \textclass amsbook
 \begin_preamble
-\maketletter
 \setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
   \linewidth
 \else
   \Gin@nat@width
 \fi}
-\makeatother
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -53,8 +51,8 @@ figs-within-sections
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -170,35 +168,6 @@ LatexCommand tableofcontents
 
 \begin_layout Chapter*
 Introduction
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figure1.eps
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-asdfasd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1048,6 +1017,35 @@ key "Briggman:2011zr"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/Seung_EDfig8.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Machine learning
 \end_layout
@@ -1173,6 +1171,64 @@ Starburst Challenge,
 \begin_layout Standard
 Some SACs were reconstructed twice, once by workers and once by EyeWire.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure2.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/Seung_EDfig1.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1605,6 +1661,35 @@ key "Helmstaedter:2013zr"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure3.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Aligning cells to a common coordinate system
 \end_layout
@@ -1870,6 +1955,35 @@ key "Helmstaedter:2013zr"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure2.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+asdfasd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Classification of Bipolar Cells
 \end_layout
@@ -1941,6 +2055,35 @@ key "wassle2009cone"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/Seung_EDfig6.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The result still contained a small number of classification errors, as adjacent
  BCs of the same type overlapped enough to violate the mosaic property.
  Corrections were made by an automatic algorithm that greedily swapped cells
@@ -1965,7 +2108,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figure_sup_splitting_hists_v3.ai
+	filename off_sac papers/Seung_EDfig5.eps
 
 \end_inset
 
@@ -1973,15 +2116,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-afasf
+hhjbhj
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2582,6 +2721,35 @@ key "Helmstaedter:2013zr"
  is more complete.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure4.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+asdfasd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Direction Selectivity in the Off SAC
 \end_layout
@@ -2732,6 +2900,35 @@ m of each other.
  an accurate representation of the dendritic length, while avoiding inaccuracy
  that arises from outliers and from dendrites that extend beyond the bounds
  of the volume.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure1.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2894,6 +3091,64 @@ In instances where edges in the affinity graph are converted to area in
  possible orientations of edges and effects from pixelization.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure4.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/Seung_EDfig7.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Co-stratification analysis
 \end_layout
@@ -2989,6 +3244,35 @@ key "Famiglietti:1991fk"
  by numerous examples of SAC dendrites that pass through BC axonal arbors
  without making any contact at all (Extended Data Fig.
  8).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure5.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3433,6 +3717,35 @@ reference "eq:SumTwoSeparableFilters"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure6.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 ---
 \end_layout
 
@@ -3712,6 +4025,35 @@ which in turn is maximized when
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/Seung_EDfig9.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hhjbhj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4223,7 +4565,32 @@ Results
 \end_layout
 
 \begin_layout Standard
-a
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure1.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+asdfasd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4398,6 +4765,35 @@ type gallery
  classification is used.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure3.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+asdfasd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 BC-SAC contact analysis
 \end_layout
@@ -4514,6 +4910,32 @@ It may seem surprising that BC6 makes little contact with On SACs, given
  One reason may be that the BC6 stratification profile dips down exactly
  at the depth of intermediate and distal dendrites (Fig.
  3C), as if BC6 were trying to avoid contacting the On SAC.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure5.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+asdfasd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
