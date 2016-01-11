@@ -187,7 +187,7 @@ Bipolar cells (BCs) provide the sole pathway from the photoreceptors of
 Retinal bipolar cells were first subdivided into classes by the polarity
  of their central receptive field response (OFF or ON) 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "werblin1969organization,kaneko1970physiological"
 
 \end_inset
@@ -210,7 +210,7 @@ invaginating
 
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "missotten1965synapses,dowling1966organization"
 
 \end_inset
@@ -219,7 +219,7 @@ key "missotten1965synapses,dowling1966organization"
  These classifications were initially thought to be related through observations
  in the cyprinid fish 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "famiglietti1977neuronal"
 
 \end_inset
@@ -231,7 +231,7 @@ key "famiglietti1977neuronal"
  found to have both flat and invaginating synapses with cone photoreceptors
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "west1978bipolar"
 
 \end_inset
@@ -243,7 +243,7 @@ key "west1978bipolar"
 Research in the late 1970s began to focus on classification using the depth
  of the stratification of the axonal arbor in the IPL 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "famiglietti1976structural"
 
 \end_inset
@@ -255,7 +255,7 @@ key "famiglietti1976structural"
  These outer and inner regions began to be referred to as subliminae a and
  b, respectively 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "nelson1978intracellular"
 
 \end_inset
@@ -274,7 +274,7 @@ types
  neurons in electron micrograph images and through golgi staining that there
  existed at least nine distinct BC morphologies within the subliminae 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "famiglietti1981functional,mills1992morphology"
 
 \end_inset
@@ -287,12 +287,12 @@ key "Ghosh:2004ff"
 
 \end_inset
 
- Extended this work to the mouse retina, wherein they identified nine cone
+ extended this work to the mouse retina, wherein they identified nine cone
  BC types in addition to the rod BC using light microscopy with immunostaining
  to help distinguish cells with different receptor types.
  This classification was further refined by 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "wassle2009cone"
 
 \end_inset
@@ -981,6 +981,15 @@ key "White:1986uq"
 \end_inset
 
 .
+ He recognized that only electron micrography offered the resolution necessary
+ to positively identify synaptic contacts, as demonstrated in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:resolutionImportant"
+
+\end_inset
+
+.
  After a decade of labor, White produced the first connectome through almost
  entirely manual reconstruction.
  In some case, neural processes were even printed, and physical reconstructions
@@ -1033,7 +1042,20 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+The value of resolution.
+ Each panel shows a bipolar cell and a starburst amacrine cell.
+ The cells in panels a and b have significant contact, while those in c
+ and d have no contact at all.
+ It would be impossible to distinguish the two cases with the resolution
+ offered by light microscopy.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:resolutionImportant"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1052,7 +1074,7 @@ Machine learning
 
 \begin_layout Standard
 The boundaries between neurons in subvolumes of the e2198 and e2006 datasets
- were manually traced.
+ were manually traced by an expert.
  Using this as ground truth, a convolutional network (CN) was trained to
  detect boundaries between neurons using the MALIS method 
 \begin_inset CommandInset citation
@@ -1181,7 +1203,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename off_sac papers/figure2.eps
+	filename off_sac papers/Seung_EDfig1.eps
 
 \end_inset
 
@@ -1189,7 +1211,29 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Eyewire Interface.
+ 
+\series bold
+a
+\series default
+, Numerical score after gameplay of a cube.
+ 
+\series bold
+b
+\series default
+, Overview mode.
+ 
+\series bold
+c
+\series default
+, Tutorial.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Eyewire-Interface"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -1210,7 +1254,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename off_sac papers/Seung_EDfig1.eps
+	filename off_sac papers/figure2.eps
 
 \end_inset
 
@@ -1218,7 +1262,38 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+EyeWire combines crowd and artificial intelligence.
+
+\series bold
+ a
+\series default
+, 3D and 2D views in the neuron reconstruction game.
+ 
+\series bold
+b
+\series default
+, Precision and recall are two measures of accuracy.
+ 
+\series bold
+c
+\series default
+, Accuracy of artificial intelligence (AI), 5881 EyeWirers, and EyeWirer
+ consensus on reconstruction of a ganglion cell.
+ 
+\series bold
+d
+\series default
+, EyeWirer precision and recall increase with number of cubes submitted.
+ Solid lines are median values across 208 EyeWirers who submitted at least
+ 500 cubes, and shaded regions indicate 25th to 75th percentile.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EyeWireCombine"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1677,7 +1752,21 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Reconstructed volume.
+ a) Rendering of reconstructed off BCs.
+ b) Rendering of reconstructed off starburst amacrine cells and off BCs.
+ Scale bar is 
+\begin_inset Formula $50\mu m$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reconstructed-off"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1744,7 +1833,7 @@ The Off SACs were defined as 32% IPL depth.
  estimated at 14% by comparison of two-photon and serial EM images 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "helmstaedter:2013connectomic"
+key "Helmstaedter:2013zr"
 
 \end_inset
 
@@ -1971,7 +2060,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-asdfasd
+Properties of On (blue) and Off (red) SACs, and usage as landmarks for quantifyi
+ng IPL depth.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+double-check colors
+\end_layout
+
+\end_inset
+
+ (A) SACs projected along a tangential axis, after rigid alignment to the
+ tangential plane.
+ Curvature and thickness variations of the IPL are evident.
+ (B) SACs projected along a tangential axis, after piecewise bilinear alignment
+ to the tangential plane.
+ (C) SAC stratification profiles before (dashed) and after (solid) piecewise
+ bilinear alignment.
+ (D) SAC stratification depth versus distance from the soma.
+ Lines indicate median, and shading the 25th and 75th percentiles.
+ Distance bins are 
+\begin_inset Formula $20\thinspace\mu$
+\end_inset
+
+m wide, beginning with 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $20\thinspace\mu$
+\end_inset
+
+m.
+ (E) Fraction of SAC surface in contact with BCs versus distance from the
+ SAC soma.
+ Standard error is based on the number of BC-SAC pairs at each distance.
+ (Inset) Median length and standard deviation of SAC dendrites.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:alignment"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1993,7 +2126,7 @@ asdasd
 \end_layout
 
 \begin_layout Section
-Using Morphology to Classify Bipolar cells
+Morphological classification of Bipolar Cells
 \end_layout
 
 \begin_layout Subsection
@@ -2070,7 +2203,57 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Off BC types 1, 2, 3a, 3b, and 4 (
+\series bold
+a
+\series default
+ through 
+\series bold
+e
+\series default
+, respectively).
+ BC1/2 mosaics appear complete.
+ BC3/4 mosaics show some gaps, probably because some of the thin axons of
+ BC3/4 were missed in the INL (see Methods).
+ 
+\series bold
+f
+\series default
+, Statistics of BC types in this volume.
+ Means and standard deviation of the hull area (area of the convex hull
+ around the cell) are measured in 
+\begin_inset Formula $\mu$
+\end_inset
+
+m
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ Type densities are estimated by dividing the number of cells (
+\begin_inset Formula $n$
+\end_inset
+
+) by the total area covered by the union of the hulls of that cell type,
+ and are measured in cells/mm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ without compensation for tissue shrinkage (Methods).
+ Up to an overall scale factor, our densities are similar to those of Wassle
+ et al.
+ (2009), who found 2233, 3212, 1866, 3254, and 3005 cells/mm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ for molecularly identified BC types, ordered as in the table.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Off-BC-renderings"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2116,7 +2299,47 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+BCs were clustered based on their stratification profiles and axonal volumes
+ (Methods).
+ 
+\series bold
+a
+\series default
+, Cells were split into two clusters by the IPL depth of the 75th percentile
+ of their stratification profiles.
+ 
+\series bold
+b
+\series default
+, The shallow cluster BC1/2 was separated into BC1 and BC2 using stratification
+ width, defined as the difference between 75th and 25th percentiles.
+ 
+\series bold
+c
+\series default
+, The deep cluster BC3/4 was divided by 10th percentile into BC4 and BC3.
+ 
+\series bold
+d
+\series default
+, BC3 was divided by axonal volume to yield BC3a and BC3b.
+ Scatter plots of the (
+\series bold
+e
+\series default
+) BC 1/2 and (
+\series bold
+f
+\series default
+) BC 3/4 divisions show swaps that were made to eliminate mosaic violations.
+ No swaps between BC 1/2 and BC 3/4 were needed.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-bc-splitting"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2494,7 +2717,35 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-f
+Hierarchical clustering procedure for On BCs based primarily on percentiles
+ of the stratification profile.
+ Dashed lines show locations of dividing points.
+ (A) BCs are initially subdivided into three groups by 85th percentile IPL
+ depth.
+ (B) BC5 types and XBC are further divided by 25th percentile IPL depth.
+ (C) RBC, BC6 and BC8/9 are distinguished by the total area of their projection
+ onto the 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane.
+ Due to the sparse representation of BC8/9 in our set of reconstructed cells,
+ we were unable to subdivide it.
+ (D) BC5t and BC5o are differentiated by stratification thickness, as defined
+ by the difference between a cell's 85th and 25th percentile IPL depths.
+ (E) BC5i and XBC differ in the total area of their projection onto the
+ 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:on-bc-class"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2503,6 +2754,236 @@ f
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+mouse BCs were originally classified into nine cone types (BC1 through BC9)
+ and one rod type based on light microscopic anatomy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ghosh:2004ff"
+
+\end_inset
+
+.
+ Later on, BC3 was subdivided into BC3a and BC3b based on molecular differences
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+.
+ Then electron microscopic anatomy was used to distinguish BC3a and BC3b,
+ divide BC5 into two types, and discover a new XBC type 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Helmstaedter:2013zr"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We revisited the classification of On BCs using the e2198 reconstructions
+ (Experimental Procedures and Fig.
+ S1).
+ As shown in the gallery of example cells (Fig.
+ 3A, B), On BC axons are found in half the depth of the IPL, closer to the
+ GCL than the INL.
+ Our On BC types correspond to those defined previously, with good agreement
+ regarding densities (compare Fig.
+ 3D with Fig.
+ 1E inset of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Helmstaedter:2013zr"
+
+\end_inset
+
+).
+ The novelty is the subdivision of BC5 into three types called BC5t, BC5i,
+ and BC5o.
+ The three types stratify at similar depths (Figs.
+\begin_inset space ~
+\end_inset
+
+3A,C), which is why they were originally grouped into a single Type 5 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ghosh:2004ff"
+
+\end_inset
+
+.
+ Nevertheless, it is possible to differentiate between the types based on
+ subtle differences between their stratification profiles.
+ BC5-inner (
+\begin_inset Quotes eld
+\end_inset
+
+BC5i
+\begin_inset Quotes erd
+\end_inset
+
+) stratifies slightly more towards the inner retina than the other types
+ (Figs.
+ 3A,C and S1B).
+ BC5-thick (
+\begin_inset Quotes eld
+\end_inset
+
+BC5t
+\begin_inset Quotes erd
+\end_inset
+
+) is more thickly stratified than BC5-outer (
+\begin_inset Quotes eld
+\end_inset
+
+BC5o
+\begin_inset Quotes erd
+\end_inset
+
+), as shown in Figs.
+ 3A,C and S1D.
+ The stratification profile of BC5t is weakly bimodal (Fig.
+ 3C), but this property was not used for the classification.
+ 
+\end_layout
+
+\begin_layout Standard
+We are confident of our three-way division of BC5 based on stratification
+ (Experimental Procedures and Fig.
+ S1), because the axonal arbors of each cluster end up roughly tiling the
+ retina with little overlap (Fig.
+ 3E, F, G).
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+tiling principle
+\begin_inset Quotes erd
+\end_inset
+
+ is thought to be a defining characteristic of a true bipolar cell type
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+.
+ On the other hand, when BC5 cells are divided into just two clusters, it
+ is impossible to avoid many collisions between highly overlapping axonal
+ arbors (Fig.
+ 4E).
+ 
+\end_layout
+
+\begin_layout Standard
+Only a few violations of the tiling principle are evident in Figs.
+ 3E, F, and G.
+ One possibility is that the tiling principle holds only approximately,
+ and that the violations are a form of biological 
+\begin_inset Quotes eld
+\end_inset
+
+noise.
+\begin_inset Quotes erd
+\end_inset
+
+ Another possibility is that the violations result from errors in our classifica
+tion procedure.
+ Therefore, we generated a 
+\begin_inset Quotes eld
+\end_inset
+
+corrected
+\begin_inset Quotes erd
+\end_inset
+
+ classification by swapping a few cells between types (Experimental Procedures).
+ The number of swaps is relatively small (Table S1).
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+type gallery
+\begin_inset Quotes erd
+\end_inset
+
+ of Fig.
+ S3 exhibits our final classification after swapping.
+ The corrected classification was the basis of subsequent analysis of BC-SAC
+ wiring, but our results are qualitatively unchanged even if the uncorrected
+ classification is used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figure3.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Classification of On BC types.
+ Examples of each type, perpendicular (A) and parallel (B) to light axis.
+ (C) Average stratification profiles of types, along with median (dashed
+ line) and quartiles (shaded) of stratification depth of On SAC dendrites
+ versus distance from SAC cell body.
+ (D) Table of statistics: number 
+\begin_inset Formula $n$
+\end_inset
+
+ of reconstructed cells; average convex hull area of the projection onto
+ the plane perpendicular to the light axis; estimate of number of cells
+ per 
+\begin_inset Formula $\textrm{mm}^{2}$
+\end_inset
+
+; coverage factor, sum of convex hull areas divided by area of hull union.
+ BC5t (E), BC5o (F), and BC5i (G) axonal arbors show few violations of the
+ tiling principle, suggesting that the classification is fairly accurate.
+ Scale bars, 
+\begin_inset Formula $10~\mu$
+\end_inset
+
+m for A, B and 
+\begin_inset Formula $30~\mu$
+\end_inset
+
+m for E, F, G.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Classification-of-On"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2737,7 +3218,55 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-asdfasd
+Two-way division of BC5 into BC5A and BC5R, defined by contact with ganglion
+ cell types using the method of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Helmstaedter:2013zr"
+
+\end_inset
+
+.
+ (A) Representative examples of gc31-56 (blue) and gc36-51 (green), shown
+ perpendicular (A) and parallel (B) to light axis.
+ (C) Each data point represents one BC5 cell, and the coordinates for each
+ cell are the fraction of the BC5 axon in contact with gc36-51 and gc31-56.
+ The dashed diagonal line separates the points into two clusters, named
+ BC5A and BC5R.
+ The color/shape of each symbol indicates whether the cell was classified
+ as BC5i versus BC5t or BC5o based on single cell anatomy and the procedure
+ of Fig.
+ S1.
+ BC5A corresponds almost perfectly with BC5i, and BC5R with BC5t/o.
+ (D) Histogram of the same data points as in the previous 
+\emph on
+xy
+\emph default
+ plot, but binned by the difference between the 
+\emph on
+x
+\emph default
+ and 
+\emph on
+y
+\emph default
+ coordinates, i.e., coverage by gc31-56 minus coverage by gc36-51.
+ The histogram separates nicely into BC5R and BC5A clusters.
+ (E) Convex hulls of BC5 cells with two-cell overlap in yellow and three
+ or greater cell overlap in red.
+ BC5A tiles well, while BC5R contains many tiling violations.
+ Scale bar, 100 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:connectivity-bc5"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2759,7 +3288,7 @@ Compared to cognitive functions such as language, the visual detection of
  motion may seem trivial, yet the underlying neural mechanisms have remained
  elusive for half a century 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Borst:2011vn,Vaney:2012cr"
 
 \end_inset
@@ -2918,7 +3447,69 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Off SAC (red) viewed opposite (
+\series bold
+a
+\series default
+) and perpendicular (
+\series bold
+b
+\series default
+) to the light axis.
+ GCL, IPL, INL are ganglion cell, inner plexiform, inner nuclear layers.
+ Grayscale images from the e2198 dataset 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Briggman:2011zr"
+
+\end_inset
+
+.
+ Swellings of distal dendrites are presynaptic boutons (inset).
+ Scale bar is 50 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+
+\series bold
+ c
+\series default
+, We hypothesize that a SAC dendrite is wired to pathways with different
+ time lags of visual response.
+ 
+\series bold
+d
+\series default
+, A previous model invoked the time lag due to signal conduction in a passive
+ dendrite 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tukker2004direction"
+
+\end_inset
+
+.
+ 
+\series bold
+e
+\series default
+, The previous model predicts an inward preferred direction for the somatic
+ voltage, contrary to empirical observations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Euler:2002oq"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Off-SAC-(red)"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3107,7 +3698,56 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+BC-SAC contact.
+
+\series bold
+ a
+\series default
+, Off BCs were divided into five types 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wassle2009cone,Helmstaedter:2013zr"
+
+\end_inset
+
+, based on IPL depth and size.
+ Scale bar is 10 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+ 
+\series bold
+b
+\series default
+, Contact areas of BC-SAC pairs, sorted by BC types.
+ 
+\series bold
+c
+\series default
+, Pairs were further sorted by the distance of the BC axon from the SAC
+ soma, as measured in the tangential plane.
+ Scale bar is 50 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+ 
+\series bold
+d
+\series default
+, Average BC-SAC contact vs.
+ distance, normalized to percentage of SAC surface area at that distance
+ (Extended Data Fig.
+ 3b).
+ Standard error is based on the number of pairs for each BC type and distance.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-SAC-contact"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3136,7 +3776,63 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Alternative contact analysis based on total areas rather than averages over
+ individual pairs.
+ 
+\series bold
+a,
+\series default
+ Total contact observed between all reconstructed BCs and SACs as a function
+ of distance from the SAC soma.
+ 
+\series bold
+b, 
+\series default
+Total SAC surface area within the union of convex hulls of each BC type
+ as a function of distance from the SAC soma.
+ All graphs are peaked around 80 
+\begin_inset Formula $\mu$
+\end_inset
+
+m, which is the region of maximum SAC dendritic branching.
+ The sharp decrease at larger distances is due to thinning and termination
+ of SAC branches.
+ The graphs differ across BC types, because the types do not cover exactly
+ the same retinal areas.
+ 
+\series bold
+c, 
+\series default
+Fraction of SAC surface area in contact with BC types, estimated by dividing
+ contact area (
+\series bold
+a
+\series default
+) by SAC surface area (
+\series bold
+b
+\series default
+).
+ This estimate is similar to that of Figure 4d, but lacks error bars.
+ 
+\series bold
+d,
+\series default
+ Fraction of SAC surface area contacted by all BC types, obtained as the
+ sum of the contact fractions in (
+\series bold
+c
+\series default
+).
+ Also plotted for comparison is the contact predicted by co-stratification,
+ the sum of the curves from Figure 5b.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Alternative-contact-OFF"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3262,7 +3958,30 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+BC-SAC co-stratification.
+ 
+\series bold
+a
+\series default
+, SAC dendrites move deeper into the IPL (median depth, red line) with increasin
+g distance from the SAC soma in the tangential plane.
+ Stratification profiles of BC types, defined as density of surface area
+ over the depth of the IPL.
+ 
+\series bold
+b
+\series default
+, Co-stratification predictions of BC-SAC contact area vs.
+ distance from the SAC soma.
+ The curves are normalized by SAC area at each distance, and are therefore
+ directly comparable with those of Figure 4d.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-costrat"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3732,7 +4451,85 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Mathematical model of the BC-SAC circuit.
+
+\series bold
+ a
+\series default
+, Spatiotemporal filter of Eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:SumTwoSeparableFilters"
+
+\end_inset
+
+).
+ Green is positive, red is negative, and gray is zero.
+ 
+\series bold
+b
+\series default
+, The transient pathway effectively combines a positive channel that leads
+ the sustained pathway by 
+\begin_inset Formula $\tau$
+\end_inset
+
+ and a negative channel that lags by 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ 
+\series bold
+c
+\series default
+, Removing the negative channel yields a Reichardt detector (
+\series bold
+d
+\series default
+).
+ 
+\series bold
+e
+\series default
+, Removing the positive channel yields a Barlow-Levick detector (
+\series bold
+f
+\series default
+).
+ A moving visual stimulus 
+\begin_inset Formula $I(x,t)$
+\end_inset
+
+ is oriented in space-time (
+\series bold
+g
+\series default
+, 
+\series bold
+h
+\series default
+), and so are the spatiotemporal filters (
+\series bold
+a
+\series default
+, 
+\series bold
+c
+\series default
+, 
+\series bold
+e
+\series default
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sac-model"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4043,7 +4840,34 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hhjbhj
+Model direction selectivity index (DSI) versus stimulus speed (units of
+ 
+\begin_inset Formula $\Delta x/\tau$
+\end_inset
+
+) for traveling sine waves of various wavelengths 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ (units of 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+).
+ The preferred speed (horizontal location of each peak) is 
+\begin_inset Formula $\lambda/(2\pi)$
+\end_inset
+
+.
+ Note that responses are cut off at high speeds by the temporal filters
+ of the model, but the DSI can decay more slowly.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Model-direction-selectivity"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4580,208 +5404,44 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-asdfasd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Subdivision of BC5 into three cell types
-\end_layout
-
-\begin_layout Standard
-Mouse BCs were originally classified into nine cone types (BC1 through BC9)
- and one rod type based on light microscopic anatomy 
+On-Off and sustained-transient organization of the inner plexiform layer
+ (IPL).
+ (A) The IPL is divided into On and Off (gray shading) sublayers, which
+ support On BC-GC wiring and Off BC-GC wiring specificity.
+ (B) Observations of BC visual responses 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Ghosh:2004ff"
+key "Baden:2013uq,Borghuis:2013uq"
 
 \end_inset
 
-.
- Later on, BC3 was subdivided into BC3a and BC3b based on molecular differences
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wassle2009cone"
-
+ suggest a tentative further division of the IPL into On-sustained, On-transient
+, Off-transient, and On-sustained sublayers.
+ The two sustained-transient divisions are located at the depths of On and
+ Off starburst amacrine cells (SACs).
+ (C) Analogous wiring specificity for On and Off BC-SAC circuits.
+ Sustained BCs prefer the proximal zone of SACs and transient BCs prefer
+ the intermediate or distal zones of SACs.
+ (D) When viewed perpendicular to the light axis, On (blue) and Off (red)
+ SACs appear mirror symmetric across the plane separating the On and Off
+ sublayers of the IPL.
+ (E) The same SACs appear similar when viewed along the light axis.
+ A BC axon (green) is much smaller.
+ Black circles and gray dots respectively indicate reconstructed On and
+ Off SAC cell body locations.
+ On BCs were reconstructed in a patch (dashed rectangle).
+ Scale bar, 
+\begin_inset Formula $50~\mu$
 \end_inset
 
-.
- Then electron microscopic anatomy was used to distinguish BC3a and BC3b,
- divide BC5 into two types, and discover a new XBC type 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Helmstaedter:2013zr"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-We revisited the classification of On BCs using the e2198 reconstructions
- (Experimental Procedures and Fig.
- S1).
- As shown in the gallery of example cells (Fig.
- 3A, B), On BC axons are found in half the depth of the IPL, closer to the
- GCL than the INL.
- Our On BC types correspond to those defined previously, with good agreement
- regarding densities (compare Fig.
- 3D with Fig.
- 1E inset of 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Helmstaedter:2013zr"
-
-\end_inset
-
-).
- The novelty is the subdivision of BC5 into three types called BC5t, BC5i,
- and BC5o.
- The three types stratify at similar depths (Figs.
-\begin_inset space ~
-\end_inset
-
-3A,C), which is why they were originally grouped into a single Type 5 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Ghosh:2004ff"
-
-\end_inset
-
-.
- Nevertheless, it is possible to differentiate between the types based on
- subtle differences between their stratification profiles.
- BC5-inner (
-\begin_inset Quotes eld
-\end_inset
-
-BC5i
-\begin_inset Quotes erd
-\end_inset
-
-) stratifies slightly more towards the inner retina than the other types
- (Figs.
- 3A,C and S1B).
- BC5-thick (
-\begin_inset Quotes eld
-\end_inset
-
-BC5t
-\begin_inset Quotes erd
-\end_inset
-
-) is more thickly stratified than BC5-outer (
-\begin_inset Quotes eld
-\end_inset
-
-BC5o
-\begin_inset Quotes erd
-\end_inset
-
-), as shown in Figs.
- 3A,C and S1D.
- The stratification profile of BC5t is weakly bimodal (Fig.
- 3C), but this property was not used for the classification.
- 
-\end_layout
-
-\begin_layout Standard
-We are confident of our three-way division of BC5 based on stratification
- (Experimental Procedures and Fig.
- S1), because the axonal arbors of each cluster end up roughly tiling the
- retina with little overlap (Fig.
- 3E, F, G).
- This 
-\begin_inset Quotes eld
-\end_inset
-
-tiling principle
-\begin_inset Quotes erd
-\end_inset
-
- is thought to be a defining characteristic of a true bipolar cell type
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wassle2009cone"
-
-\end_inset
-
-.
- On the other hand, when BC5 cells are divided into just two clusters, it
- is impossible to avoid many collisions between highly overlapping axonal
- arbors (Fig.
- 4E).
- 
-\end_layout
-
-\begin_layout Standard
-Only a few violations of the tiling principle are evident in Figs.
- 3E, F, and G.
- One possibility is that the tiling principle holds only approximately,
- and that the violations are a form of biological 
-\begin_inset Quotes eld
-\end_inset
-
-noise.
-\begin_inset Quotes erd
-\end_inset
-
- Another possibility is that the violations result from errors in our classifica
-tion procedure.
- Therefore, we generated a 
-\begin_inset Quotes eld
-\end_inset
-
-corrected
-\begin_inset Quotes erd
-\end_inset
-
- classification by swapping a few cells between types (Experimental Procedures).
- The number of swaps is relatively small (Table S1).
- The 
-\begin_inset Quotes eld
-\end_inset
-
-type gallery
-\begin_inset Quotes erd
-\end_inset
-
- of Fig.
- S3 exhibits our final classification after swapping.
- The corrected classification was the basis of subsequent analysis of BC-SAC
- wiring, but our results are qualitatively unchanged even if the uncorrected
- classification is used.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figure3.eps
+m,
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:On-Off-shematics"
 
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-asdfasd
 \end_layout
 
 \end_inset
@@ -4925,7 +5585,29 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-asdfasd
+Wiring specificity of On BC-SAC circuit.
+ (A) Fraction of On SAC surface area contacted by On BC types.
+ (B) Distance is defined for each BC-SAC pair in the tangential plane from
+ the centroid of BC-SAC contact to the point on the SAC soma from which
+ the dendritic trunk emerges.
+ The centroid of emergence points is used if there are multiple trunks.
+ (C) Fraction of On SAC surface contacted by On BC types versus distance
+ from the SAC soma.
+ Standard error is based on the number of pairs for each BC type and distance.
+ (D) Contact predicted from co-stratification analysis.
+ Scale bar, 
+\begin_inset Formula $30~\mu$
+\end_inset
+
+m.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Wiring-specificity-ON"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
