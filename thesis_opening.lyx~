@@ -1203,57 +1203,6 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename off_sac papers/Seung_EDfig1.eps
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Eyewire Interface.
- 
-\series bold
-a
-\series default
-, Numerical score after gameplay of a cube.
- 
-\series bold
-b
-\series default
-, Overview mode.
- 
-\series bold
-c
-\series default
-, Tutorial.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Eyewire-Interface"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
 	filename off_sac papers/figure2.eps
 
 \end_inset

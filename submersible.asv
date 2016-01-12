@@ -52,15 +52,8 @@ elseif board_num == 4
 elseif board_num == 5
     
     R.R([3 5],8) = true;
-    R.R(8,2) = true;
+    R.R([3 5],8) = true;
     
-    R.end_locs = [15, 1];
-    R.mid_locs = 55;
-    
-    M(8, 2, end) = true;
-    
-    R.H_nums = [3 1 1 1 4 2 3 1 6 1];
-    R.V_nums = [2 4 1 3 1 4 4 2 0 2]';
     
     
 end
