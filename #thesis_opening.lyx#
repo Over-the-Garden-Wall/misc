@@ -411,8 +411,30 @@ key "Helmstaedter:2013zr"
 \end_layout
 
 \begin_layout Standard
-The different types have been observed to have differing time lags in visual
- response 
+A BC type has several characteristics beyond mere anatomy, however, related
+ to their functional properties.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+tom baden review stuff here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mouse BCs have been classified into multiple types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wassle2009cone"
+
+\end_inset
+
+, with different time lags in visual response 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Baden:2013uq,Borghuis:2013uq"
@@ -420,6 +442,12 @@ key "Baden:2013uq,Borghuis:2013uq"
 \end_inset
 
 .
+ Motion is a spatiotemporal phenomenon: an object at one location appears
+ somewhere else after a time delay.
+ Therefore we wondered whether DS might arise because different locations
+ on the SAC dendrite are wired to BC types with different time lags.
+ More specifically, we hypothesized that the proximal BCs (wired near the
+ SAC soma) lag the distal BCs (wired far from the soma).
  
 \end_layout
 
@@ -802,16 +830,6 @@ key "Euler:2002oq"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Motion is a spatiotemporal phenomenon: an object at one location appears
- somewhere else after a time delay.
- Therefore we wondered whether DS might arise because different locations
- on the SAC dendrite are wired to BC types with different time lags.
- More specifically, we hypothesized that the proximal BCs (wired near the
- SAC soma) lag the distal BCs (wired far from the soma).
- 
 \end_layout
 
 \begin_layout Section

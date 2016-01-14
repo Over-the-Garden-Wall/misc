@@ -9,12 +9,16 @@
 \else
   \Gin@nat@width
 \fi}
+
+\numberwithin{figure}{chapter}
 \end_preamble
 \use_default_options true
+\begin_removed_modules
+figs-within-sections
+\end_removed_modules
 \begin_modules
 theorems-ams
 eqs-within-sections
-figs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -64,8 +68,8 @@ figs-within-sections
 \shortcut idx
 \color #008000
 \end_index
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 1
+\tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -82,51 +86,31 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Title
+A Connectomic Analysis of the Directional Selectivity Circuit in the Mouse
+ Retina
 \end_layout
 
 \begin_layout Author
-by Matthew Greene
+by 
 \end_layout
 
 \begin_layout Author
-author in
+Matthew Greene
 \end_layout
 
 \begin_layout Author
-submitted to BCS blah
+B.A., Columbia University in the City of New York (2006)
+\end_layout
+
+\begin_layout Date
+January 2015
 \end_layout
 
 \begin_layout Standard
-author
-\end_layout
+\begin_inset Newpage newpage
+\end_inset
 
-\begin_layout Standard
-certified by
-\end_layout
 
-\begin_layout Standard
-accepted by
-\end_layout
-
-\begin_layout Standard
-BIG BLANK PAGE
-\end_layout
-
-\begin_layout Title
-Title
-\end_layout
-
-\begin_layout Author
-by Matthew Greene
-\end_layout
-
-\begin_layout Author
-author in
-\end_layout
-
-\begin_layout Author
-submitted to BCS blah
 \end_layout
 
 \begin_layout Paragraph*
@@ -137,16 +121,82 @@ abstract
 1-pages of text
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Section*
 Acknowledgements
 \end_layout
 
 \begin_layout Standard
-acknowledge 3 pages or so
+Firstly, I thank my adviser Sebastian Seung for giving me the opportunity
+ to work and study at BCS.
+ Sebastian has made everything in the past five years possible.
+ I thank Sebastian also for having indirectly having introduced me to my
+ wonderful wife Maria, whom I met in Sebastian's neural networks class.
 \end_layout
 
 \begin_layout Standard
-BIG BLANK PAGE
+The bulk of the work of this thesis is far greater than any one person could
+ achieve, and in that regard, I thank colleague and serial co-author Jinseop
+ Kim.
+ Jinseop worked for many years curating the data and supervising the workers
+ who made the reconstructions featured here possible.
+ I wish Jinseop the best in all his future endeavors.
+\end_layout
+
+\begin_layout Standard
+The reconstructions were created both by the crowdsourcing platform 
+\begin_inset Quotes eld
+\end_inset
+
+EyeWire
+\begin_inset Quotes erd
+\end_inset
+
+ and by professional tracers working alongside other lab members.
+ I acknowledge the continuous effort of both the Eyewirers and all the professio
+nal reconstructors, and especially Rachel Prentki, who demonstrated that
+ no resource is more necessary in the reconstruction of neural data than
+ human intelligence.
+\end_layout
+
+\begin_layout Standard
+I thank all the developers of the software that made the receonstruction
+ effort possible.
+ Foremost among these are Mark Richardson, Michael Purcaro, and Matt Balkamm,
+ who all went far above and beyond the call of your average software engineers,
+ squashing many bugs and ultimately producing a very slick product despite
+ having a very small team
+\end_layout
+
+\begin_layout Standard
+I thank all my other academic colleagues in the Seung lab for all the advice
+ and comeraderie that was provided over the years.
+ Viren Jain and Srinivas Turaga both taught me a great about neural networks
+ and about the best pubs in Cambridge.
+ My long-time office-mate Daniel Berger was always a source of interesting
+ conversations and curious observations.
+ Neville Sanjana and Jen Wang likewise were a delight to be around, and
+ always reming me of some of the most fun times in the lab.
+\end_layout
+
+\begin_layout Standard
+I separately thank labmates Aleks Zlateski, who is also my former roommate,
+ Uygar Sumbul, and Ignacio Arganda-Carreras.
+ In the latter couple of years, this trio was the heart of the lab.
+ They were always full of interesting stories of late-night escapades with
+ two of our other great friends, Ranko Sredojovic and Jovana Knezekic.
+\end_layout
+
+\begin_layout Standard
+Lastly, I thank my incredible wife Maria, and our children Gambit and Vivian
+ for their tireless support.
+ No academic accomplishment can match the joy my family brings me.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -166,7 +216,7 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Introduction
 \end_layout
 
@@ -331,6 +381,16 @@ key "Helmstaedter:2013zr"
 A BC type has several characteristics beyond mere anatomy, however, related
  to their functional properties.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+tom baden review stuff here
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -340,7 +400,7 @@ Early work on direction selectivity in retinal ganglion cells
 \begin_layout Standard
 Among the earliest work in the study of the behavior of cells in the vertibrate
  retina was that of Hartline in his 1938 account.
- Here it was discovered that there exists at least three types of retinal
+ There it was discovered that there exists at least three types of retinal
  ganglion cells (GCs) that respond to different stimulus features.
  He identified ON cells that would respond to the onset of a light stimulus,
  OFF cells that would respond to the termination of light stimulation, and
@@ -418,7 +478,7 @@ key "reichardt1961autocorrelation"
 \end_layout
 
 \begin_layout Section
-The starburst amacrine cells
+The starburst amacrine cell
 \end_layout
 
 \begin_layout Standard
@@ -442,7 +502,7 @@ key "Famiglietti:1991fk"
 
 , which send signals from the retina to the brain through the optic nerve.
  Like most other amacrine cells, SACs lack an axon; their output synapses
- are found in the distal zones of their dendrites (Figure 1b).
+ are found in the distal zones of their dendrites.
  
 \end_layout
 
@@ -1043,11 +1103,6 @@ status open
 
 \begin_layout Plain Layout
 The value of resolution.
- Each panel shows a bipolar cell and a starburst amacrine cell.
- The cells in panels a and b have significant contact, while those in c
- and d have no contact at all.
- It would be impossible to distinguish the two cases with the resolution
- offered by light microscopy.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1056,6 +1111,48 @@ name "fig:resolutionImportant"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Each panel shows a bipolar cell and a starburst amacrine cell.
+ The cells in 
+\series bold
+a
+\series default
+ and 
+\series bold
+b
+\series default
+ have significant contact, while those in 
+\series bold
+c
+\series default
+ and 
+\series bold
+d
+\series default
+ have no contact at all.
+ It would be impossible to distinguish the two cases with the resolution
+ offered by light microscopy.
 \end_layout
 
 \end_inset
@@ -1117,10 +1214,6 @@ supervoxels
 \end_inset
 
  were assembled by humans into accurate 3D reconstructions of neurons.
- For this activity, we hired and trained a small number of workers in the
- lab, and also transformed work into play by mobilizing volunteers through
- EyeWire, a web site that turns 3D reconstruction of neurons into a game
- of coloring serial EM images.
  
 \end_layout
 
@@ -1129,11 +1222,24 @@ Reconstruction by EyeWirers
 \end_layout
 
 \begin_layout Standard
-Even before the learning in normal gameplay illustrated by Figure 2d, all
- EyeWirers are required to go through a training session immediately after
- registering for the site.
+In order to assemble the supervoxels produced by automatic segmentation,
+ we primarily mobilized volunteers through EyeWire, a web site that turns
+ 3D reconstruction of neurons into a game of coloring serial EM images.
+ 
+\end_layout
+
+\begin_layout Standard
+Even before the learning in normal gameplay illustrated by 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+a, all EyeWirers are required to go through a training session immediately
+ after registering for the site.
  This consists of a sequence of tutorial cubes, each of which was previously
- colored by an expert (Supplementary Figure 6).
+ colored by an expert .
  Each cube teaches through instructions and per-click feedback about accuracy
  based on comparing the EyeWirer's selections with those of the expert.
  After submitting a tutorial cube, the EyeWirer is given a chance to view
@@ -1143,15 +1249,21 @@ Even before the learning in normal gameplay illustrated by Figure 2d, all
 \begin_layout Standard
 Accuracy is monitored on a weekly basis by computing the precision and recall
  of each EyeWirer with respect to the truth, defined as neuron reconstructions
- based on EyeWire consensus followed by GrimReaper corrections.
+ based on EyeWire consensus followed by GrimReaper corrections (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+c).
  Less accurate EyeWirers are given less weight in the vote, which appears
  to improve the overall accuracy of the system.
 \end_layout
 
 \begin_layout Standard
 Players' daily, weekly, and monthly scores are publicly displayed on a leaderboa
-rd (Supplementary Figure 7, right), motivating players to excel through
- competition.
+rd, motivating players to excel through competition.
  Players communicate with each other through online 
 \begin_inset Quotes eld
 \end_inset
@@ -1160,7 +1272,7 @@ chat
 \begin_inset Quotes erd
 \end_inset
 
- (Supplementary Figure 7, left) and discussion forums.
+ and discussion forums.
 \end_layout
 
 \begin_layout Standard
@@ -1188,129 +1300,6 @@ Starburst Challenge,
  a sequence of tutorial cubes drawn from SACs.
  Those who passed with sufficient accuracy were an elite group allowed to
  reconstruct SACs (Supplementary Information).
-\end_layout
-
-\begin_layout Standard
-Some SACs were reconstructed twice, once by workers and once by EyeWire.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename off_sac papers/figure2.eps
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-EyeWire combines crowd and artificial intelligence.
-
-\series bold
- a
-\series default
-, 3D and 2D views in the neuron reconstruction game.
- 
-\series bold
-b
-\series default
-, Precision and recall are two measures of accuracy.
- 
-\series bold
-c
-\series default
-, Accuracy of artificial intelligence (AI), 5881 EyeWirers, and EyeWirer
- consensus on reconstruction of a ganglion cell.
- 
-\series bold
-d
-\series default
-, EyeWirer precision and recall increase with number of cubes submitted.
- Solid lines are median values across 208 EyeWirers who submitted at least
- 500 cubes, and shaded regions indicate 25th to 75th percentile.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EyeWireCombine"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Reconstruction by workers
-\end_layout
-
-\begin_layout Standard
-A team of part-time workers, numbering about half a dozen at any given time,
- also reconstructed neurons using a more sophisticated version of the EyeWire
- interface.
- Workers were hired based on an interview and a short test of software use
- passed by 3/4 of the applicants.
- They were trained for 40 to 50 hours before generating reconstructions
- used for research.
- Their skills typically improved for months or even years after the initial
- training period, and were superior to those of professional neuroscientists
- without reconstruction experience.
-  
-\end_layout
-
-\begin_layout Standard
-As with EyeWire, the task of reconstructing an entire neuron was divided
- into subtasks, each of which involved reconstructing the neuron within
- a subvolume starting from a supervoxel 
-\begin_inset Quotes eld
-\end_inset
-
-seed.
-\begin_inset Quotes erd
-\end_inset
-
- However, the subvolumes were roughly 100 times larger than EyeWire cubes,
- and only two workers were assigned to each subvolume.
- In the first stage of error correction, disagreements were detected by
- computer, and resolved by one of the two workers, or a third worker.
- The third occasionally detected and corrected errors that were not disagreement
-s between the first two.
- Most disagreements were the result of careless errors, and were easily
- resolved.
- More rarely, there were disagreements caused by fundamental ambiguities
- in the image.
- These locations were noted for later examination with more contextual informati
-on, as described below.
-\end_layout
-
-\begin_layout Standard
-In the second stage of error correction, 3D reconstructions of entire neurons
- were assembled from multiple subvolumes and inspected by one of the authors
- (J.S.K.).
- Suspicious branches or terminations, as well as overlaps between reconstruction
-s of different neurons were detected.
- The original image was reexamined at these locations to check for errors.
- The process was repeated until no further errors could be detected.
- The F-score (Figure 2b) between the reconstructions before and after the
- second stage was 0.99 for SACs and 0.98 for BCs.
- Some errors may still remain, but it is likely that correcting them would
- have similarly little effect.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1387,8 +1376,7 @@ Submit,
 \begin_inset Quotes erd
 \end_inset
 
- receives a numerical score (Extended Data Fig.
- 1a), and proceeds to the next cube.
+ receives a numerical score, and proceeds to the next cube.
  Because our AI is sufficiently accurate, coloring supervoxels is faster
  than manually coloring voxels, an older approach to 3D reconstruction 
 \begin_inset CommandInset citation
@@ -1419,8 +1407,14 @@ Consensus is used not only to incentivize individual players, but also to
  Given the colorings of multiple players starting from the same seed in
  the same cube, a consensus can be computed by voting on each supervoxel.
  EyeWirer consensus was much more accurate than any individual EyeWirer
- (Fig.
- 2b,c).
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+b,c).
 \end_layout
 
 \begin_layout Standard
@@ -1430,11 +1424,23 @@ Coloring a neuron is more challenging than it sounds.
  warning.
  Careless errors result from lapses in attention.
  Extensive practice is required to achieve accuracy.
- The most accurate EyeWirers (Fig.
- 2c, upper right corner) often had experience with thousands of cubes.
+ The most accurate EyeWirers (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+c, upper right corner) often had experience with thousands of cubes.
  Improvements in accuracy were observed over the course of hundreds of cubes,
- corresponding to tens of hours of practice (Fig.
- 2d).
+ corresponding to tens of hours of practice (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+d).
  According to subjective reports of EyeWirers, learning continues for much
  longer than that.
  In contrast, previous successes at 
@@ -1472,8 +1478,7 @@ Over 100,000 registered EyeWirers have been recruited by news reports, social
  media, and the EyeWire blog.
  Players span a broad range of ages and educational levels, come from over
  130 countries, and the great majority have no formal training in neuroscience
- (Extended Data Figs.
- 2 and 3; Supplementary Notes).
+ .
  These statistics show that EyeWire indeed widens participation in neuroscience
  research.
  At the same time, the most avid players constitute an elite group with
@@ -1484,16 +1489,162 @@ Over 100,000 registered EyeWirers have been recruited by news reports, social
 \end_layout
 
 \begin_layout Standard
-Lab workers also reconstructed neurons independently of EyeWire, with a
- more sophisticated version of the user interface (Methods).
- Their reconstructions were pooled with those of EyeWirers for the analyses
- reported below.
- Reconstruction error was quantified (Methods), and was treated like other
- kinds of experimental error when calculating confidence intervals from
- our data.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/figure2.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+EyeWire combines crowd and artificial intelligence.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EyeWireCombine"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Paragraph*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+a
+\series default
+, 3D and 2D views in the neuron reconstruction game.
+ 
+\series bold
+b
+\series default
+, Precision and recall are two measures of accuracy.
+ 
+\series bold
+c
+\series default
+, Accuracy of artificial intelligence (AI), 5881 EyeWirers, and EyeWirer
+ consensus on reconstruction of a ganglion cell.
+ 
+\series bold
+d
+\series default
+, EyeWirer precision and recall increase with number of cubes submitted.
+ Solid lines are median values across 208 EyeWirers who submitted at least
+ 500 cubes, and shaded regions indicate 25th to 75th percentile.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Reconstruction by workers
+\end_layout
+
+\begin_layout Standard
+Lab workers also reconstructed neurons independently of EyeWire, with a
+ more sophisticated version of the user interface developed in the lab called
+ OMNI.
+ Their reconstructions were pooled with those of EyeWirers for the analyses
+ reported below.
+ Reconstruction error was quantified, and was treated like other kinds of
+ experimental error when calculating confidence intervals from our data.
+\end_layout
+
+\begin_layout Standard
+Workers were hired based on an interview and a short test of software use
+ passed by 3/4 of the applicants.
+ They were trained for 40 to 50 hours before generating reconstructions
+ used for research.
+ Their skills typically improved for months or even years after the initial
+ training period, and were superior to those of professional neuroscientists
+ without reconstruction experience.
+  
+\end_layout
+
+\begin_layout Standard
+As with EyeWire, the task of reconstructing an entire neuron was divided
+ into subtasks, each of which involved reconstructing the neuron within
+ a subvolume starting from a supervoxel 
+\begin_inset Quotes eld
+\end_inset
+
+seed.
+\begin_inset Quotes erd
+\end_inset
+
+ However, the subvolumes were roughly 100 times larger than EyeWire cubes,
+ and only two workers were assigned to each subvolume.
+ In the first stage of error correction, disagreements were detected by
+ computer, and resolved by one of the two workers, or a third worker.
+ The third occasionally detected and corrected errors that were not disagreement
+s between the first two.
+ Most disagreements were the result of careless errors, and were easily
+ resolved.
+ More rarely, there were disagreements caused by fundamental ambiguities
+ in the image.
+ These locations were noted for later examination with more contextual informati
+on, as described below.
+\end_layout
+
+\begin_layout Standard
+In the second stage of error correction, 3D reconstructions of entire neurons
+ were assembled from multiple subvolumes and inspected by an expert.
+ Suspicious branches or terminations, as well as overlaps between reconstruction
+s of different neurons were detected.
+ The original image was reexamined at these locations to check for errors.
+ The process was repeated until no further errors could be detected.
+ The F-score (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EyeWireCombine"
+
+\end_inset
+
+b) between the reconstructions before and after the second stage was 0.99
+ for SACs and 0.98 for BCs.
+ Some errors may still remain, but it is likely that correcting them would
+ have similarly little effect.
+ 
+\end_layout
+
+\begin_layout Subsection
 Reconstruction of Off SACs
 \end_layout
 
@@ -1531,7 +1682,7 @@ In total, 79 Off SACs were reconstructed, 39 by forward tracing and 52 by
  mean the combination of the two.
 \end_layout
 
-\begin_layout Paragraph*
+\begin_layout Subsection
 Reconstruction of Off BCs
 \end_layout
 
@@ -1702,17 +1853,48 @@ status open
 
 \begin_layout Plain Layout
 Reconstructed volume.
- a) Rendering of reconstructed off BCs.
- b) Rendering of reconstructed off starburst amacrine cells and off BCs.
- Scale bar is 
-\begin_inset Formula $50\mu m$
-\end_inset
-
-
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Reconstructed-off"
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+a
+\series default
+, Rendering of reconstructed off BCs.
+ 
+\series bold
+b
+\series default
+, Rendering of reconstructed off starburst amacrine cells and off BCs.
+ Scale bar is 
+\begin_inset Formula $50\mu m$
 \end_inset
 
 
@@ -2009,25 +2191,63 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Properties of On (blue) and Off (red) SACs, and usage as landmarks for quantifyi
-ng IPL depth.
-\begin_inset Note Note
-status open
+Using SACs for volume alignment.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:alignment"
 
-\begin_layout Plain Layout
-double-check colors
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- (A) SACs projected along a tangential axis, after rigid alignment to the
- tangential plane.
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+On (blue) and Off (red) SACs and their usage as landmarks for quantifying
+ IPL depth.
+ 
+\series bold
+a,
+\series default
+ SACs projected along a tangential axis, after rigid alignment to the tangential
+ plane.
  Curvature and thickness variations of the IPL are evident.
- (B) SACs projected along a tangential axis, after piecewise bilinear alignment
+ 
+\series bold
+b
+\series default
+, SACs projected along a tangential axis, after piecewise bilinear alignment
  to the tangential plane.
- (C) SAC stratification profiles before (dashed) and after (solid) piecewise
+ 
+\series bold
+c
+\series default
+, SAC stratification profiles before (dashed) and after (solid) piecewise
  bilinear alignment.
- (D) SAC stratification depth versus distance from the soma.
+ 
+\series bold
+d,
+\series default
+ SAC stratification depth versus distance from the soma.
  Lines indicate median, and shading the 25th and 75th percentiles.
  Distance bins are 
 \begin_inset Formula $20\thinspace\mu$
@@ -2042,18 +2262,14 @@ m wide, beginning with
 \end_inset
 
 m.
- (E) Fraction of SAC surface in contact with BCs versus distance from the
- SAC soma.
+ 
+\series bold
+e
+\series default
+, Fraction of SAC surface in contact with BCs versus distance from the SAC
+ soma.
  Standard error is based on the number of BC-SAC pairs at each distance.
  (Inset) Median length and standard deviation of SAC dendrites.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:alignment"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2152,6 +2368,36 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Off BC types
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Off-BC-renderings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Off BC types 1, 2, 3a, 3b, and 4 (
 \series bold
 a
@@ -2163,12 +2409,12 @@ e
 , respectively).
  BC1/2 mosaics appear complete.
  BC3/4 mosaics show some gaps, probably because some of the thin axons of
- BC3/4 were missed in the INL (see Methods).
+ BC3/4 were missed in the INL.
  
 \series bold
 f
 \series default
-, Statistics of BC types in this volume.
+, Statistics of off BC types in this volume.
  Means and standard deviation of the hull area (area of the convex hull
  around the cell) are measured in 
 \begin_inset Formula $\mu$
@@ -2189,20 +2435,18 @@ m
 \end_inset
 
  without compensation for tissue shrinkage (Methods).
- Up to an overall scale factor, our densities are similar to those of Wassle
- et al.
- (2009), who found 2233, 3212, 1866, 3254, and 3005 cells/mm
+ Up to an overall scale factor, our densities are similar to those of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "wassle2009cone"
+
+\end_inset
+
+, who found 2233, 3212, 1866, 3254, and 3005 cells/mm
 \begin_inset Formula $^{2}$
 \end_inset
 
  for molecularly identified BC types, ordered as in the table.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Off-BC-renderings"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2248,8 +2492,37 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BCs were clustered based on their stratification profiles and axonal volumes
- (Methods).
+Off BC classification.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-bc-splitting"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+BCs were clustered based on their stratification profiles and axonal volumes.
  
 \series bold
 a
@@ -2282,13 +2555,6 @@ f
 \series default
 ) BC 3/4 divisions show swaps that were made to eliminate mosaic violations.
  No swaps between BC 1/2 and BC 3/4 were needed.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:off-bc-splitting"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2666,28 +2932,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Hierarchical clustering procedure for On BCs based primarily on percentiles
- of the stratification profile.
- Dashed lines show locations of dividing points.
- (A) BCs are initially subdivided into three groups by 85th percentile IPL
- depth.
- (B) BC5 types and XBC are further divided by 25th percentile IPL depth.
- (C) RBC, BC6 and BC8/9 are distinguished by the total area of their projection
- onto the 
-\begin_inset Formula $xy$
-\end_inset
-
- plane.
- Due to the sparse representation of BC8/9 in our set of reconstructed cells,
- we were unable to subdivide it.
- (D) BC5t and BC5o are differentiated by stratification thickness, as defined
- by the difference between a cell's 85th and 25th percentile IPL depths.
- (E) BC5i and XBC differ in the total area of their projection onto the
+On BC classification.
  
-\begin_inset Formula $xy$
-\end_inset
-
- plane.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:on-bc-class"
@@ -2695,6 +2941,69 @@ name "fig:on-bc-class"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Hierarchical clustering procedure for On BCs based primarily on percentiles
+ of the stratification profile.
+ Dashed lines show locations of dividing points.
+ 
+\series bold
+a
+\series default
+, BCs are initially subdivided into three groups by 85th percentile IPL
+ depth.
+ 
+\series bold
+b
+\series default
+, BC5 types and XBC are further divided by 25th percentile IPL depth.
+ 
+\series bold
+c,
+\series default
+ RBC, BC6 and BC8/9 are distinguished by the total area of their projection
+ onto the 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane.
+ Due to the sparse representation of BC8/9 in our set of reconstructed cells,
+ we were unable to subdivide it.
+ 
+\series bold
+d
+\series default
+, BC5t and BC5o are differentiated by stratification thickness, as defined
+ by the difference between a cell's 85th and 25th percentile IPL depths.
+ 
+\series bold
+e
+\series default
+, BC5i and XBC differ in the total area of their projection onto the 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane.
 \end_layout
 
 \end_inset
@@ -2896,11 +3205,57 @@ status open
 
 \begin_layout Plain Layout
 Classification of On BC types.
- Examples of each type, perpendicular (A) and parallel (B) to light axis.
- (C) Average stratification profiles of types, along with median (dashed
- line) and quartiles (shaded) of stratification depth of On SAC dendrites
- versus distance from SAC cell body.
- (D) Table of statistics: number 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Classification-of-On"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Examples of each type, perpendicular (
+\series bold
+a
+\series default
+) and parallel (
+\series bold
+b
+\series default
+) to light axis.
+ (
+\series bold
+c
+\series default
+) Average stratification profiles of types, along with median (dashed line)
+ and quartiles (shaded) of stratification depth of On SAC dendrites versus
+ distance from SAC cell body.
+ (
+\series bold
+d
+\series default
+) Table of statistics: number 
 \begin_inset Formula $n$
 \end_inset
 
@@ -2911,24 +3266,49 @@ Classification of On BC types.
 \end_inset
 
 ; coverage factor, sum of convex hull areas divided by area of hull union.
- BC5t (E), BC5o (F), and BC5i (G) axonal arbors show few violations of the
- tiling principle, suggesting that the classification is fairly accurate.
+ BC5t (
+\series bold
+e
+\series default
+), BC5o (
+\series bold
+f
+\series default
+), and BC5i (
+\series bold
+g
+\series default
+) axonal arbors show few violations of the tiling principle, suggesting
+ that the classification is fairly accurate.
  Scale bars, 
 \begin_inset Formula $10~\mu$
 \end_inset
 
-m for A, B and 
+m for 
+\series bold
+a
+\series default
+, 
+\series bold
+b
+\series default
+ and 
 \begin_inset Formula $30~\mu$
 \end_inset
 
-m for E, F, G.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Classification-of-On"
-
-\end_inset
-
-
+m for 
+\series bold
+e
+\series default
+, 
+\series bold
+f
+\series default
+, 
+\series bold
+g
+\series default
+.
 \end_layout
 
 \end_inset
@@ -3167,6 +3547,37 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Contact-based division of BC5.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:connectivity-bc5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Two-way division of BC5 into BC5A and BC5R, defined by contact with ganglion
  cell types using the method of 
 \begin_inset CommandInset citation
@@ -3176,9 +3587,21 @@ key "Helmstaedter:2013zr"
 \end_inset
 
 .
- (A) Representative examples of gc31-56 (blue) and gc36-51 (green), shown
- perpendicular (A) and parallel (B) to light axis.
- (C) Each data point represents one BC5 cell, and the coordinates for each
+ 
+\series bold
+a,
+\series default
+ 
+\series bold
+b
+\series default
+, Representative examples of gc31-56 (blue) and gc36-51 (green), shown perpendic
+ular and parallel to light axis.
+ 
+\series bold
+c
+\series default
+, Each data point represents one BC5 cell, and the coordinates for each
  cell are the fraction of the BC5 axon in contact with gc36-51 and gc31-56.
  The dashed diagonal line separates the points into two clusters, named
  BC5A and BC5R.
@@ -3187,7 +3610,11 @@ key "Helmstaedter:2013zr"
  of Fig.
  S1.
  BC5A corresponds almost perfectly with BC5i, and BC5R with BC5t/o.
- (D) Histogram of the same data points as in the previous 
+ 
+\series bold
+d
+\series default
+, Histogram of the same data points as in the previous 
 \emph on
 xy
 \emph default
@@ -3201,21 +3628,18 @@ y
 \emph default
  coordinates, i.e., coverage by gc31-56 minus coverage by gc36-51.
  The histogram separates nicely into BC5R and BC5A clusters.
- (E) Convex hulls of BC5 cells with two-cell overlap in yellow and three
- or greater cell overlap in red.
+ 
+\series bold
+e
+\series default
+, Convex hulls of BC5 cells with two-cell overlap in yellow and three or
+ greater cell overlap in red.
  BC5A tiles well, while BC5R contains many tiling violations.
  Scale bar, 100 
 \begin_inset Formula $\mu$
 \end_inset
 
 m.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:connectivity-bc5"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3396,6 +3820,36 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The Off SAC.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Off-SAC-(red)"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Off SAC (red) viewed opposite (
 \series bold
 a
@@ -3452,13 +3906,6 @@ key "Euler:2002oq"
 \end_inset
 
 .
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Off-SAC-(red)"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3647,10 +4094,44 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BC-SAC contact.
+BC-Off SAC contact.
 
 \series bold
- a
+ 
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-SAC-contact"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+a
 \series default
 , Off BCs were divided into five types 
 \begin_inset CommandInset citation
@@ -3690,13 +4171,6 @@ d
  (Extended Data Fig.
  3b).
  Standard error is based on the number of pairs for each BC type and distance.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:off-SAC-contact"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3723,6 +4197,37 @@ status open
 
 
 \begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Alternative contact analysis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Alternative-contact-OFF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
 \begin_layout Plain Layout
 Alternative contact analysis based on total areas rather than averages over
@@ -3775,13 +4280,6 @@ c
 ).
  Also plotted for comparison is the contact predicted by co-stratification,
  the sum of the curves from Figure 5b.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Alternative-contact-OFF"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3909,6 +4407,36 @@ status open
 \begin_layout Plain Layout
 BC-SAC co-stratification.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:off-costrat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
 \series bold
 a
 \series default
@@ -3924,13 +4452,6 @@ b
  distance from the SAC soma.
  The curves are normalized by SAC area at each distance, and are therefore
  directly comparable with those of Figure 4d.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:off-costrat"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4403,7 +4924,41 @@ status open
 Mathematical model of the BC-SAC circuit.
 
 \series bold
- a
+ 
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sac-model"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+a
 \series default
 , Spatiotemporal filter of Eq.
  (
@@ -4472,13 +5027,6 @@ c
 e
 \series default
 ).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:sac-model"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4789,8 +5337,37 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Model direction selectivity index (DSI) versus stimulus speed (units of
- 
+Model direction selectivity index (DSI) versus stimulus speed.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Model-direction-selectivity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+DSI versus stimulus speed (units of 
 \begin_inset Formula $\Delta x/\tau$
 \end_inset
 
@@ -4810,13 +5387,6 @@ Model direction selectivity index (DSI) versus stimulus speed (units of
 .
  Note that responses are cut off at high speeds by the temporal filters
  of the model, but the DSI can decay more slowly.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Model-direction-selectivity"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5126,7 +5696,7 @@ g insights into its function.
 \end_layout
 
 \begin_layout Chapter
-An Analagous Model in the On SAC
+Analagous Connectivity in the On SAC
 \end_layout
 
 \begin_layout Standard
@@ -5353,11 +5923,48 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-On-Off and sustained-transient organization of the inner plexiform layer
- (IPL).
- (A) The IPL is divided into On and Off (gray shading) sublayers, which
- support On BC-GC wiring and Off BC-GC wiring specificity.
- (B) Observations of BC visual responses 
+Organization of the inner plexiform layer
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:On-Off-shematics"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+On-Off and sustained-transient organization of the IPL.
+ 
+\series bold
+a
+\series default
+, The IPL is divided into On and Off (gray shading) sublayers, which support
+ On BC-GC wiring and Off BC-GC wiring specificity.
+ 
+\series bold
+b
+\series default
+, Observations of BC visual responses 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Baden:2013uq,Borghuis:2013uq"
@@ -5368,13 +5975,25 @@ key "Baden:2013uq,Borghuis:2013uq"
 , Off-transient, and On-sustained sublayers.
  The two sustained-transient divisions are located at the depths of On and
  Off starburst amacrine cells (SACs).
- (C) Analogous wiring specificity for On and Off BC-SAC circuits.
+ 
+\series bold
+c
+\series default
+, Analogous wiring specificity for On and Off BC-SAC circuits.
  Sustained BCs prefer the proximal zone of SACs and transient BCs prefer
  the intermediate or distal zones of SACs.
- (D) When viewed perpendicular to the light axis, On (blue) and Off (red)
- SACs appear mirror symmetric across the plane separating the On and Off
- sublayers of the IPL.
- (E) The same SACs appear similar when viewed along the light axis.
+ 
+\series bold
+d
+\series default
+, When viewed perpendicular to the light axis, On (blue) and Off (red) SACs
+ appear mirror symmetric across the plane separating the On and Off sublayers
+ of the IPL.
+ 
+\series bold
+e
+\series default
+, The same SACs appear similar when viewed along the light axis.
  A BC axon (green) is much smaller.
  Black circles and gray dots respectively indicate reconstructed On and
  Off SAC cell body locations.
@@ -5384,13 +6003,6 @@ key "Baden:2013uq,Borghuis:2013uq"
 \end_inset
 
 m,
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:On-Off-shematics"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5535,20 +6147,6 @@ status open
 
 \begin_layout Plain Layout
 Wiring specificity of On BC-SAC circuit.
- (A) Fraction of On SAC surface area contacted by On BC types.
- (B) Distance is defined for each BC-SAC pair in the tangential plane from
- the centroid of BC-SAC contact to the point on the SAC soma from which
- the dendritic trunk emerges.
- The centroid of emergence points is used if there are multiple trunks.
- (C) Fraction of On SAC surface contacted by On BC types versus distance
- from the SAC soma.
- Standard error is based on the number of pairs for each BC type and distance.
- (D) Contact predicted from co-stratification analysis.
- Scale bar, 
-\begin_inset Formula $30~\mu$
-\end_inset
-
-m.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -5557,6 +6155,58 @@ name "fig:Wiring-specificity-ON"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+a
+\series default
+, Fraction of On SAC surface area contacted by On BC types.
+ 
+\series bold
+b
+\series default
+, Distance is defined for each BC-SAC pair in the tangential plane from
+ the centroid of BC-SAC contact to the point on the SAC soma from which
+ the dendritic trunk emerges.
+ The centroid of emergence points is used if there are multiple trunks.
+ 
+\series bold
+c
+\series default
+, Fraction of On SAC surface contacted by On BC types versus distance from
+ the SAC soma.
+ Standard error is based on the number of pairs for each BC type and distance.
+ 
+\series bold
+d
+\series default
+, Contact predicted from co-stratification analysis.
+ Scale bar, 
+\begin_inset Formula $30~\mu$
+\end_inset
+
+m.
 \end_layout
 
 \end_inset
@@ -5904,44 +6554,8 @@ The contact analysis was done with BC types given by hierarchical clustering
  not performed (data not shown).
 \end_layout
 
-\begin_layout Chapter
-DSGC Stuff?
-\end_layout
-
 \begin_layout Standard
-asdasd
-\end_layout
-
-\begin_layout Section
-Identify synapses on SACs
-\end_layout
-
-\begin_layout Standard
-adasd
-\end_layout
-
-\begin_layout Section
-BC-DSGC connections
-\end_layout
-
-\begin_layout Standard
-adad
-\end_layout
-
-\begin_layout Section
-model
-\end_layout
-
-\begin_layout Standard
-adasd
-\end_layout
-
-\begin_layout Section
-discussion
-\end_layout
-
-\begin_layout Standard
-adas
+-
 \end_layout
 
 \begin_layout Standard
