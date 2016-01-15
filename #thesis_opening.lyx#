@@ -251,6 +251,7 @@ key "Yonehara:2013hc"
 .
  Thus, the mechanism of DS arises somewhere in the region of the retina
  where these cells interact, the inner plexiform layer (IPL).
+ 
 \end_layout
 
 \begin_layout Section
@@ -411,30 +412,8 @@ key "Helmstaedter:2013zr"
 \end_layout
 
 \begin_layout Standard
-A BC type has several characteristics beyond mere anatomy, however, related
- to their functional properties.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-tom baden review stuff here
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Mouse BCs have been classified into multiple types 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wassle2009cone"
-
-\end_inset
-
-, with different time lags in visual response 
+The different types have been observed to have differing time lags in visual
+ response 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Baden:2013uq,Borghuis:2013uq"
@@ -442,12 +421,6 @@ key "Baden:2013uq,Borghuis:2013uq"
 \end_inset
 
 .
- Motion is a spatiotemporal phenomenon: an object at one location appears
- somewhere else after a time delay.
- Therefore we wondered whether DS might arise because different locations
- on the SAC dendrite are wired to BC types with different time lags.
- More specifically, we hypothesized that the proximal BCs (wired near the
- SAC soma) lag the distal BCs (wired far from the soma).
  
 \end_layout
 
@@ -790,6 +763,85 @@ key "Hausselt:2007nx"
 .
  Therefore the present work focuses on BC-SAC circuitry.
  
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename off_sac papers/SACpic.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Starburst Amacrine Cell.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SACimg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+An Off SAC.
+ 
+\series bold
+a
+\series default
+, View of an SAC on the plane perpindicular to the light axis.
+ Each dendrite of the SAC has a separate preferred direction oriented outward
+ from the soma.
+ The inset shows vericosities in the distal regions of the dendrite, indicating
+ likely presynaptic sites.
+ 
+\series bold
+b
+\series default
+, A view of the same SAC from a plane parallel to the light axis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -830,6 +882,115 @@ key "Euler:2002oq"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Motion is a spatiotemporal phenomenon: an object at one location appears
+ somewhere else after a time delay.
+ Therefore we wondered whether DS might arise because different locations
+ on the SAC dendrite are wired to BC types with different time lags.
+ More specifically, we hypothesized that the proximal BCs (wired near the
+ SAC soma) lag the distal BCs (wired far from the soma).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename DSmech.eps
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hypothesized Models of Direction Selectivity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+General and SAC-specific models of DS.
+ 
+\series bold
+a
+\series default
+, A schematic representation of the Reichardt model.
+ The two arms represent two spatially distinct excitatory inputs, with the
+ input of the left arm being delayed relative to the right arm.
+ If the detector is active only when it receives two simultaneous inputs,
+ a stimulus moving from left to right in time 
+\begin_inset Formula $\tau$
+\end_inset
+
+ will activate the detector, while a stimulus moving in the opposite direction
+ will not.
+ 
+\series bold
+b
+\series default
+, Similarly, the Barlow-Levick model has two arms with a delay line, but
+ in this model, the delay is on the right arm, which provides inhibitory
+ input rather than excitatory.
+ If the detector is active only when it receives excitation without simultaneous
+ly receiving inhibition, once again only the rightward traveling stimulus
+ will active the detector.
+ 
+\series bold
+c
+\series default
+, A Reichardt-like mechanism for DS in the SAC, with the delay line occuring
+ presynaptically.
+ 
+\series bold
+d
+\series default
+, The same model, but with a postsynaptic delay line via intracellular signal
+ propagation.
+ 
+\series bold
+e
+\series default
+, An illustration of the observation that if there is a delay occuring through
+ signal propagation, a stimulus traveling in the null direction should cause
+ substantial depolarization in the soma.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2197,7 +2358,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figure2.eps
+	filename alignment.eps
 
 \end_inset
 
@@ -2276,14 +2437,6 @@ m wide, beginning with
 \end_inset
 
 m.
- 
-\series bold
-e
-\series default
-, Fraction of SAC surface in contact with BCs versus distance from the SAC
- soma.
- Standard error is based on the number of BC-SAC pairs at each distance.
- (Inset) Median length and standard deviation of SAC dendrites.
 \end_layout
 
 \end_inset
