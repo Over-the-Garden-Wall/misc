@@ -113,12 +113,105 @@ January 2015
 
 \end_layout
 
-\begin_layout Paragraph*
-abstract 
+\begin_layout Abstract
+This thesis addresses the question of how direction selectivity (DS) arises
+ in the mouse retina.
+ DS has long been observed in retinal ganglion cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barlow1963selective"
+
+\end_inset
+
+, and more recently confirmed in the starburst amacrine cell 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Euler:2002oq"
+
+\end_inset
+
+.
+ Upstream retinal bipolar cells, however, have been shown to lack DS 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yonehara:2013hc"
+
+\end_inset
+
+, indicating that the mechanism that gives rise to DS lies in the inner
+ plexiform layer, where the axons of bipolar cells costratify with amacrine
+ and ganglion cells.
+ We reconstructed a region of the IPL and identified cell types within it.
+ We discovered a novel mechanism which may explain the origin of DS activity
+ in the mammalian retina, which relies on what we call 
+\begin_inset Quotes eld
+\end_inset
+
+space-time wiring specificity.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+It has been suggested that a DS signal can arise from non-DS excitatory
+ inputs if at least one among spatially segregated inputs transmits its
+ signal with some delay 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "reichardt1961autocorrelation"
+
+\end_inset
+
+, which we extend to consider also a difference in the degree to which the
+ signal is sustained.
+ Previously, it has been supposed that this delay occurs within the starburst
+ amacrine cells' dendrites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hausselt:2007nx"
+
+\end_inset
+
+.
+ We hypothesized an alternative, presynaptic mechanism.
+ We observed that different bipolar cell types, which are believed to express
+ different degrees of sustained activity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baden:2013uq"
+
+\end_inset
+
+, contact different regions of the starburst amacrine cell dendrite, giving
+ rise to a space-time wiring specifity that should produce a DS signal.
+ We additionally provide a model that predicts the strength of DS as a function
+ of the spatial segregation of inputs and the temporal delay.
 \end_layout
 
 \begin_layout Standard
-1-pages of text
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -170,8 +263,8 @@ I thank all the developers of the software that made the receonstruction
 \begin_layout Standard
 I thank all my other academic colleagues in the Seung lab for all the advice
  and comeraderie that was provided over the years.
- Viren Jain and Srinivas Turaga both taught me a great about neural networks
- and about the best pubs in Cambridge.
+ Viren Jain and Srinivas Turaga both taught me a great deal about neural
+ networks and about the best pubs in Cambridge.
  My long-time office-mate Daniel Berger was always a source of interesting
  conversations and curious observations.
  Neville Sanjana and Jen Wang likewise were a delight to be around, and
@@ -188,29 +281,12 @@ I separately thank labmates Aleks Zlateski, who is also my former roommate,
 
 \begin_layout Standard
 Lastly, I thank my incredible wife Maria, and our children Gambit and Vivian
- for their tireless support.
+ for their love and support.
  No academic accomplishment can match the joy my family brings me.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList figure
-
 \end_inset
 
 
@@ -2444,6 +2520,10 @@ m.
 Classification of Bipolar Cells
 \end_layout
 
+\begin_layout Standard
+Since 
+\end_layout
+
 \begin_layout Section
 Morphological classification of Bipolar Cells
 \end_layout
@@ -2545,6 +2625,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename off_sac papers/Seung_EDfig6.eps
+	width 80text%
+	height 80theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -2668,6 +2751,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename off_sac papers/Seung_EDfig5.eps
+	width 80text%
+	height 80theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -3718,8 +3804,14 @@ c
  BC5A and BC5R.
  The color/shape of each symbol indicates whether the cell was classified
  as BC5i versus BC5t or BC5o based on single cell anatomy and the procedure
- of Fig.
- S1.
+ of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:on-bc-class"
+
+\end_inset
+
+.
  BC5A corresponds almost perfectly with BC5i, and BC5R with BC5t/o.
  
 \series bold
@@ -4035,10 +4127,6 @@ c).
 \end_layout
 
 \begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
 Edges of the affinity graph connecting BC with SAC voxels were defined as
  BC-SAC contact edges.
  For each pair, the sum of the edges yielded an estimate of contact area.
@@ -4175,9 +4263,7 @@ m.
 d
 \series default
 , Average BC-SAC contact vs.
- distance, normalized to percentage of SAC surface area at that distance
- (Extended Data Fig.
- 3b).
+ distance, normalized to percentage of SAC surface area at that distance.
  Standard error is based on the number of pairs for each BC type and distance.
 \end_layout
 
@@ -4888,7 +4974,13 @@ key "Watson:1985fk,Adelson:1985bh"
 \end_inset
 
 .
- This is illustrated by Fig.
+ This is illustrated by 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Model-direction-selectivity"
+
+\end_inset
+
  6 using the fact that the convolution in Eq.
 \begin_inset space \space{}
 \end_inset
@@ -5683,8 +5775,14 @@ key "Euler:2002oq"
 
 \end_inset
 
- (Fig.
- 1e).
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hypothesized-Models-of"
+
+\end_inset
+
+e).
  In contrast, the presynaptic delay model is compatible with approximating
  an SAC dendrite as isopotential (
 \begin_inset CommandInset ref
@@ -6249,8 +6347,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-On-Off and sustained-transient organization of the IPL.
- 
+
 \series bold
 a
 \series default
@@ -6267,8 +6364,8 @@ key "Baden:2013uq,Borghuis:2013uq"
 
 \end_inset
 
- suggest a tentative further division of the IPL into On-sustained, On-transient
-, Off-transient, and On-sustained sublayers.
+ suggest a division of the IPL into sustained and transient sublayers beyond
+ the on and off division.
  The two sustained-transient divisions are located at the depths of On and
  Off starburst amacrine cells (SACs).
  
@@ -6290,7 +6387,6 @@ d
 e
 \series default
 , The same SACs appear similar when viewed along the light axis.
- A BC axon (green) is much smaller.
  Black circles and gray dots respectively indicate reconstructed On and
  Off SAC cell body locations.
  On BCs were reconstructed in a patch (dashed rectangle).
@@ -6298,7 +6394,7 @@ e
 \begin_inset Formula $50~\mu$
 \end_inset
 
-m,
+m.
 \end_layout
 
 \end_inset
@@ -6554,8 +6650,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Figure S2.
- Robustness of contact analysis to missing bipolar cells.
+Robustness of contact analysis to missing bipolar cells.
  Approximately half of BC5i (
 \series bold
 a
@@ -6790,8 +6885,14 @@ Discussion
 
 \begin_layout Standard
 Our reconstruction of the On BC-SAC circuit suggests that its wiring diagram
- parallels that of the Off BC-SAC circuit (Fig.
- 1C).
+ parallels that of the Off BC-SAC circuit (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:On-Off-shematics"
+
+\end_inset
+
+c).
  We find that sustained BC types prefer to contact SAC dendrites near the
  SAC soma, and transient BC types prefer an intermediate distance from the
  SAC soma.
